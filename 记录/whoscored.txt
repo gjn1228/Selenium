@@ -1,0 +1,1 @@
+cloudfront.net/js/ws.min.js:beginPath()

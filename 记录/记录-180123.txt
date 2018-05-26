@@ -1,0 +1,478 @@
+###################################################################################################
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
+#Chrome Headless
+chrome_options = Options()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--disable-gpu')
+
+driver= webdriver.Chrome(chrome_options=chrome_options)
+#driver= webdriver.Chrome()
+driver.get('https://www.whoscored.com/Matches/1222117/Live/Spain-La-Liga-2017-2018-Eibar-Malaga')
+driver.implicitly_wait(3)
+
+elem = driver.find_element_by_xpath('//*[@id="live-match-options"]/li[3]/a/span[2]')
+elem.click()
+driver.implicitly_wait(3)
+
+elem = driver.find_element_by_xpath('//*[@id="chalkboard"]/div[2]/div[1]/div[2]/div[4]/span[1]')
+print(elem.text)
+
+
+driver.quit()
+
+
+
+
+
+***********************************************************************
+C:\ProgramData\Anaconda3\python.exe C:/Users/嘉楠/PycharmProjects/Selenium/Whoscored-Selenium.py
+8
+
+Process finished with exit code 0
+
+
+###################################################################################################
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
+#Chrome Headless
+chrome_options = Options()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--disable-gpu')
+#Chrome 打开soccerway联赛网址
+driver= webdriver.Chrome(chrome_options=chrome_options)
+#driver= webdriver.Chrome()
+driver.get('https://www.whoscored.com/Matches/1222117/Live/Spain-La-Liga-2017-2018-Eibar-Malaga')
+driver.implicitly_wait(3)
+#选择gameweek选项
+elem = driver.find_element_by_xpath('//*[@id="live-match-options"]/li[3]/a/span[2]')
+elem.click()
+driver.implicitly_wait(3)
+#选择下拉菜单，和目标轮次
+elem = driver.find_element_by_xpath('//*[@id="chalkboard"]/div[2]/div[1]/div[2]/div[4]/span[1]')
+print(elem.text)
+
+
+driver.quit()
+
+
+
+
+
+***********************************************************************
+C:\ProgramData\Anaconda3\python.exe C:/Users/嘉楠/PycharmProjects/soccerwayV2/TransMarket.py
+Edixson González - E. González - Keeper - 28
+Daniel Valdés - D. Valdés - Keeper - 32
+ Deportivo Táchira --  Jul 1, 2017
+Federico Silvestre - F. Silvestre - Centre-Back - 30
+ Club Universitario de Sucre --  Jul 19, 2017
+Carlos Rivero - C. Rivero - Centre-Back - 25
+Diego Osio - D. Osio - Centre-Back - 21
+Luis Mago - L. Mago - Left-Back - 23
+Richard Badillo - R. Badillo - Left-Back - 28
+José Manríquez - J. Manríquez - Right-Back - 30
+Marcel Guaramato - M. Guaramato - Right-Back - 24
+ Deportivo Anzoátegui SC --  Jan 10, 2018
+Juan Colina - J. Colina - Defensive Midfield - 31
+Christopher Monta?a - C. Monta?a - Defensive Midfield - 19
+Carlos Ramos - C. Ramos - Defensive Midfield - 18
+Maurice Cova - M. Cova - Central Midfield - 25
+José Ramón Reyes - R. Reyes - Right Midfield - 23
+Marlon Fernández - M. Fernández - Attacking Midfield - 32
+Alfonso Nieto - A. Nieto - Attacking Midfield - 26
+ Free agent --  Jan 12, 2018
+ángel Gamboa - á. Gamboa - Striker - 20
+José Bandez - J. Bandez - Right Wing - 20
+Aquiles Ocanto - A. Ocanto - Secondary Striker - 29
+Tommy Tobar - T. Tobar - Centre-Forward - 31
+Facundo Callejo - F. Callejo - Centre-Forward - 25
+ Club Atletico Colon (Santa Fe) II --  Jan 16, 2018
+Jeysen Nú?ez - J. Nú?ez - Centre-Forward - 28
+ Cúcuta Deportivo --  Jul 1, 2017
+Marco Bustillo - M. Bustillo - Centre-Forward - 21
+Robin Gutiérrez - R. Gutiérrez - Centre-Forward - 20
+
+Process finished with exit code 0
+
+
+###################################################################################################
+import requests
+import lxml.html
+import xlwings as xw
+import datetime
+
+#网址
+
+url1 = 'https://www.transfermarkt.com/carabobo-fc/kader/verein/14682/saison_id/2017/plus/1'
+url2 = 'https://www.transfermarkt.com/carabobo-fc/transfers/verein/14682/saison_id/2017/pos//detailpos/0/w_s/w/plus/1#abgaenge'
+
+
+def transm_team(url):
+    headers = {
+        'User-Agent': "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1"}
+    html = requests.get(url, headers=headers)
+    tree = lxml.html.fromstring(html.text)
+    # Excel
+    wb = xw.Book('Playersheet LBC 2018.xlsx')
+    sheet = wb.sheets['Carabobo']
+    # 读取数据
+    player_num = len(tree.xpath('//*[@id="yw1"]/table/tbody/tr'))
+    team = {}
+    for i in range(1, player_num + 1):
+        # 名字，位置，年龄
+        player = tree.xpath('//*[@id="yw1"]/table/tbody/tr[%d]/td[2]/table/tr[1]/td[2]/div[1]/span/a/text()' % i)[0]
+        position = tree.xpath('//*[@id="yw1"]/table/tbody/tr[%d]/td[2]/table/tr[2]/td/text()' % i)[0]
+        age = tree.xpath('//*[@id="yw1"]/table/tbody/tr[%d]/td[3]/text()' % i)[0]
+        j = player.split(' ')
+        jl = j[-1]
+        jf = j[-2][0]
+        jn = jf + '. ' + jl
+        print(player, '-', jn, '-', position, '-', age.split('(')[-1][:-1])
+        # 转入
+        trans_ele = tree.xpath('//*[@id="yw1"]/table/tbody/tr[%d]/td[2]/a' % i)
+        if len(trans_ele) > 0:
+            trans_all = trans_ele[0].get('title')
+            trans = trans_all.split(':')
+            trans_club = trans[1].split(';')[0]
+            trans_date_a = trans[2].split(';')[0]
+            trans_date_b = datetime.datetime.strptime(trans_date_a, ' %b %d, %Y')
+            if trans_date_b.timestamp() > datetime.datetime(2017, 12, 1).timestamp():
+                trans_date = trans_date_b.strftime('%Y/%m/%d')
+        else:
+            trans_club = ''
+            trans_date = ''
+        team[player] = [player,jn,position,age.split('(')[-1][:-1],trans_club,trans_date]
+    return team
+
+
+def transm_inout(url):
+    headers = {
+        'User-Agent': "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1"}
+    html = requests.get(url, headers=headers)
+    tree = lxml.html.fromstring(html.text)
+    # Excel
+    wb = xw.Book('Playersheet LBC 2018.xlsx')
+    sheet = wb.sheets['Carabobo']
+    # 读取数据--转入
+    player_num = len(tree.xpath('//*[@id="main"]/div[10]/div/div[3]/div[3]/table/tbody/tr'))
+    trans_in = []
+    for i in range(1, player_num + 1):
+        # 名字，位置，年龄
+        player = tree.xpath('//*[@id="main"]/div[10]/div/div[3]/div[3]/table/tbody/tr[%d]/td[2]/table/tr[1]/td[2]/a/text()' % i)[0]
+        trans_in.append(player)
+
+
+
+    # 读取数据--转出
+    player_num = len(tree.xpath('//*[@id="main"]/div[10]/div/div[4]/div[3]/table/tbody/tr'))
+    for i in range(1, player_num + 1):
+        # 名字，位置，年龄
+        player = tree.xpath('//*[@id="main"]/div[10]/div/div[4]/div[3]/table/tbody/tr[[%d]/td[2]/table/tbody/tr[1]/td[2]/a/text()' % i)[0]
+        trans_out = []
+        if player not in trans_in:
+            trans_out.append(player)
+    return trans_out
+
+
+
+
+
+team = transm_team(url1)
+trout = transm_inout(url2)
+print('\n'.join(team))
+print(trout)
+
+for player in trout:
+    team[player][5] = 'Out'
+print('\n'.join(team))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+***********************************************************************
+
+C:\ProgramData\Anaconda3\python.exe C:/Users/嘉楠/PycharmProjects/soccerwayV2/TransMarket.py
+Edixson González - E. González - Keeper - 28
+Daniel Valdés - D. Valdés - Keeper - 32
+Federico Silvestre - F. Silvestre - Centre-Back - 30
+Carlos Rivero - C. Rivero - Centre-Back - 25
+Diego Osio - D. Osio - Centre-Back - 21
+Luis Mago - L. Mago - Left-Back - 23
+Richard Badillo - R. Badillo - Left-Back - 28
+José Manríquez - J. Manríquez - Right-Back - 30
+Marcel Guaramato - M. Guaramato - Right-Back - 24
+Juan Colina - J. Colina - Defensive Midfield - 31
+Christopher Monta?a - C. Monta?a - Defensive Midfield - 19
+Carlos Ramos - C. Ramos - Defensive Midfield - 18
+Maurice Cova - M. Cova - Central Midfield - 25
+José Ramón Reyes - R. Reyes - Right Midfield - 23
+Marlon Fernández - M. Fernández - Attacking Midfield - 32
+Alfonso Nieto - A. Nieto - Attacking Midfield - 26
+ángel Gamboa - á. Gamboa - Striker - 20
+José Bandez - J. Bandez - Right Wing - 20
+Aquiles Ocanto - A. Ocanto - Secondary Striker - 29
+Tommy Tobar - T. Tobar - Centre-Forward - 31
+Facundo Callejo - F. Callejo - Centre-Forward - 25
+Jeysen Nú?ez - J. Nú?ez - Centre-Forward - 28
+Marco Bustillo - M. Bustillo - Centre-Forward - 21
+Robin Gutiérrez - R. Gutiérrez - Centre-Forward - 20
+Traceback (most recent call last):
+  File "C:/Users/嘉楠/PycharmProjects/soccerwayV2/TransMarket.py", line 83, in <module>
+    trout = transm_inout(url2)
+  File "C:/Users/嘉楠/PycharmProjects/soccerwayV2/TransMarket.py", line 72, in transm_inout
+    player = tree.xpath('//*[@id="main"]/div[10]/div/div[4]/div[3]/table/tbody/tr[[%d]/td[2]/table/tbody/tr[1]/td[2]/a/text()' % i)[0]
+  File "src\lxml\lxml.etree.pyx", line 1587, in lxml.etree._Element.xpath (src\lxml\lxml.etree.c:59352)
+  File "src\lxml\xpath.pxi", line 307, in lxml.etree.XPathElementEvaluator.__call__ (src\lxml\lxml.etree.c:171226)
+  File "src\lxml\xpath.pxi", line 227, in lxml.etree._XPathEvaluatorBase._handle_result (src\lxml\lxml.etree.c:170183)
+lxml.etree.XPathEvalError: Invalid expression
+
+Process finished with exit code 1
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
+###################################################################################################
+
+
+
+***********************************************************************
+
+
