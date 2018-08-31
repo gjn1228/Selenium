@@ -17,6 +17,42 @@ import configparser
 
 class Sele(object):
 
+    def row_determine(self, date, game, awayteam, ha, at):
+        gdf = pd.DataFrame(game, columns=['D', 'T', 'HA', 'C'])
+        gdf['Date'] = gdf['D'].map(datetime.datetime.date)
+        gdf2 = gdf[datetime.timedelta(-3) < gdf['Date'] - date][
+            gdf['Date'] - date < datetime.timedelta(3)]
+        row = -1
+        if gdf2.shape[0] == 1:
+            if gdf2.iloc[0, 1] == awayteam:
+                if gdf2.iloc[0, 2] == ['H', 'A'][at.index(ha)]:
+                    row = gdf2.index.tolist()[0] + 10
+            else:
+                ip = input('%s %s %s %s' % (str(gdf2.iloc[0, 4]), gdf2.iloc[0, 1], gdf2.iloc[0, 2], gdf2.iloc[0, 3]))
+                if ip == '':
+                    row = gdf2.index.tolist()[0] + 10
+        elif gdf2.shape[0] > 1:
+            gdf3 = gdf2[gdf2['HA'] == ['H', 'A'][at.index(ha)]][gdf2['T'] == awayteam]
+            if gdf3.shape[0] == 1:
+                row = gdf3.index.tolist()[0] + 10
+            else:
+                print('Date: %s, Against team: %s, H/A: %s' % (date, awayteam, ['H', 'A'][at.index(ha)]))
+                for i in range(gdf2.shape[0]):
+                    print('%s :%s %s %s %s' % (i + 1, str(gdf2.iloc[i, 4]), gdf2.iloc[i, 1],
+                                               gdf2.iloc[i, 2], gdf2.iloc[i, 3]))
+                ip = input('which game')
+                try:
+                    print()
+                    row = gdf2.index.tolist()[int(ip) - 1] + 10
+                except:
+                    pass
+        print('row: %s' % row)
+
+        if row == -1:
+            row = int(input('%s row:' % ha))
+
+        return row
+
     def whoscored_url(slef, url):
 
 
@@ -946,73 +982,9 @@ class Sele(object):
                     if g[2] == ['H', 'A'][at.index(ha)]:
                         if g[1] == wsc_game_dic[at[1 - at.index(ha)]]:
                             row = game.index(g) + 10
-            plist = st.range((8, 29), (8, 80)).value
-            nlist = st.range((6, 29), (6, 80)).value
-            result = st.range((row, 29), (row, 80)).value
-            st.range((row, 29), (row, 80)).api.Font.Bold = False
-            st.range((row, 29), (row, 80)).api.Font.ColorIndex = 1
             hal = x[at.index(ha) + 1]
-            home = hal[0][0]
-            away = hal[0][1]
-            st.range(row, 5).value = home[0]
-            st.range(row, 6).value = away[0]
-            if len(home[1]) > 0:
-                try:
-                    st.range(row, 5).api.AddComment('\n'.join(home[1]))
-                except:
-                    st.range(row, 5).api.Comment.Text('\n'.join(home[1]))
-                st.range(row, 5).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
-                st.range(row, 5).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
-            if len(away[1]) > 0:
-                try:
-                    st.range(row, 6).api.AddComment('\n'.join(away[1]))
-                except:
-                    st.range(row, 6).api.Comment.Text('\n'.join(away[1]))
-                st.range(row, 6).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
-                st.range(row, 6).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
-            if home[2] == ['red']:
-                st.range(row, 5).api.Interior.Color = 255
-            if away[2] == ['red']:
-                st.range(row, 6).api.Interior.Color = 255
 
-            st.range((row, 19), (row, 25)).value = hal[1]
-
-            for name in hal[2][0]:
-                ind = 0
-                data = hal[2][0][name]
-                if name in plist:
-                    ind = plist.index(name)
-                elif hal[2][1][name] in nlist:
-                    ind = nlist.index(hal[2][1][name])
-
-                if ind == 0:
-                    print(ha, '-', name, 'error')
-                else:
-                    result[ind] = ''.join(data[1])
-                    col = ind + 29
-                    if data[2][0] == 'Bold':
-                        st.range(row, col).api.Font.Bold = True
-                    if data[2][1] == 'red':
-                        st.range(row, col).api.Font.ColorIndex = 3
-                    if data[2][1] == 'blue':
-                        st.range(row, col).api.Font.ColorIndex = 5
-                    if data[2][2] == 'yellow':
-                        st.range(row, col).api.Interior.Color = 65535
-                    if data[2][2] == 'red':
-                        st.range(row, col).api.Interior.Color = 255
-                    if data[2][3] == 'I':
-                        st.range(row, col).api.Font.Italic = True
-                    if len(data[3]) > 0:
-                        try:
-                            st.range(row, col).api.AddComment('\n'.join(data[3]))
-                        except:
-                            st.range(row, col).api.Comment.Text('\n'.join(data[3]))
-                        st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
-                        st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
-            st.range((row, 29), (row, 80)).value = result
-            og = hal[3]
-            if og > 0:
-                st.range(row, plist.index('OG') + 29).value = og
+            self.to_sheet_all(st, row, hal, ha)
 
     def draft_to_pfl(self, x):
         # path = r'E:\Company\League\EPL\\'
@@ -1068,87 +1040,9 @@ class Sele(object):
                     if g[2] == ['H', 'A'][at.index(ha)]:
                         if g[1] == wsc_game_dic[at[1 - at.index(ha)]]:
                             row = game.index(g) + 10
-            plist = st.range((8, 29), (8, 80)).value
-            nlist = st.range((6, 29), (6, 80)).value
-            pldic = {'ú': 'u', 'é': 'e', 'É': 'E'}
 
-            def pl_2(l):
-                l2 = []
-                for ll in l:
-                    ll2 = str(ll)
-                    for p in pldic:
-                        ll2 = ll2.replace(p, pldic[p])
-                    l2.append(ll2)
-                return l2
-
-            pl2 = pl_2(plist)
-            result = st.range((row, 29), (row, 80)).value
-            st.range((row, 29), (row, 80)).api.Font.Bold = False
-            st.range((row, 29), (row, 80)).api.Font.ColorIndex = 1
             hal = x[at.index(ha) + 1]
-            home = hal[0][0]
-            away = hal[0][1]
-            st.range(row, 5).value = home[0]
-            st.range(row, 6).value = away[0]
-            if len(home[1]) > 0:
-                try:
-                    st.range(row, 5).api.AddComment('\n'.join(home[1]))
-                except:
-                    st.range(row, 5).api.Comment.Text('\n'.join(home[1]))
-                st.range(row, 5).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
-                st.range(row, 5).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
-            if len(away[1]) > 0:
-                try:
-                    st.range(row, 6).api.AddComment('\n'.join(away[1]))
-                except:
-                    st.range(row, 6).api.Comment.Text('\n'.join(away[1]))
-                st.range(row, 6).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
-                st.range(row, 6).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
-            if 'red' in home[2]:
-                st.range(row, 5).api.Interior.Color = 255
-            if 'red' in away[2]:
-                st.range(row, 6).api.Interior.Color = 255
-
-            st.range((row, 19), (row, 25)).value = hal[1]
-
-            for name in hal[2][0]:
-                ind = 0
-                data = hal[2][0][name]
-                if name in plist:
-                    ind = plist.index(name)
-                elif name in pl2:
-                    ind = pl2.index(name)
-                elif hal[2][1][name] in nlist:
-                    ind = nlist.index(hal[2][1][name])
-
-                if ind == 0:
-                    print(ha, '-', name, 'error')
-                else:
-                    result[ind] = ''.join(data[1])
-                    col = ind + 29
-                    if data[2][0] == 'Bold':
-                        st.range(row, col).api.Font.Bold = True
-                    if data[2][1] == 'red':
-                        st.range(row, col).api.Font.ColorIndex = 3
-                    if data[2][1] == 'blue':
-                        st.range(row, col).api.Font.ColorIndex = 5
-                    if data[2][2] == 'yellow':
-                        st.range(row, col).api.Interior.Color = 65535
-                    if data[2][2] == 'red':
-                        st.range(row, col).api.Interior.Color = 255
-                    if data[2][3] == 'I':
-                        st.range(row, col).api.Font.Italic = True
-                    if len(data[3]) > 0:
-                        try:
-                            st.range(row, col).api.AddComment('\n'.join(data[3]))
-                        except:
-                            st.range(row, col).api.Comment.Text('\n'.join(data[3]))
-                        st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
-                        st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
-            st.range((row, 29), (row, 80)).value = result
-            og = hal[3]
-            if og > 0:
-                st.range(row, plist.index('OG') + 29).value = og
+            self.to_sheet_pfl(st, row, hal, ha)
 
     def draft_to_ps(self, x):
         # path = r'E:\Company\League\EPL\\'
@@ -1321,7 +1215,15 @@ class Sele(object):
         for ha in at:
             if ha in wsc_ps_dic:
                 st = wb.sheets[wsc_ps_dic[ha]]
-                row = int(input('%s row:' % ha))
+
+                date = datetime.datetime.strptime(x[0][3], '%d/%m/%Y %H:%M:%S').date()
+                awayteam = at[1 - at.index(ha)]
+                if awayteam in wsc_game_dic:
+                    awayteam = wsc_game_dic[awayteam]
+                game = st.range((10, 1), (80, 4)).value
+
+                row = self.row_determine(date, game, awayteam, ha, at)
+
                 plist = st.range((8, 29), (8, 80)).value
                 nlist = st.range((6, 29), (6, 80)).value
                 pldic = {'ú': 'u', 'é': 'e', 'É': 'E'}
@@ -1454,7 +1356,14 @@ class Sele(object):
         for ha in at:
             if ha in wsc_ps_dic:
                 st = wb.sheets[wsc_ps_dic[ha]]
-                row = int(input('%s row:' % ha))
+
+                date = datetime.datetime.strptime(x[0][3], '%d/%m/%Y %H:%M:%S').date()
+                awayteam = at[1 - at.index(ha)]
+                if awayteam in wsc_game_dic:
+                    awayteam = wsc_game_dic[awayteam]
+                game = st.range((10, 1), (80, 4)).value
+                row = self.row_determine(date, game, awayteam, ha, at)
+
                 plist = st.range((8, 29), (8, 80)).value
                 nlist = st.range((6, 29), (6, 80)).value
                 result = st.range((row, 29), (row, 80)).value
@@ -1573,74 +1482,16 @@ class Sele(object):
         for ha in at:
             if ha in wsc_ps_dic:
                 st = wb.sheets[wsc_ps_dic[ha]]
-                row = int(input('%s row:' % ha))
-                plist = st.range((8, 29), (8, 80)).value
-                nlist = st.range((6, 29), (6, 80)).value
-                result = st.range((row, 29), (row, 80)).value
-                st.range((row, 29), (row, 80)).api.Font.Bold = False
-                st.range((row, 29), (row, 80)).api.Font.ColorIndex = 1
+
+                date = datetime.datetime.strptime(x[0][3], '%d/%m/%Y %H:%M:%S').date()
+                awayteam = at[1 - at.index(ha)]
+                if awayteam in wsc_game_dic:
+                    awayteam = wsc_game_dic[awayteam]
+                game = st.range((10, 1), (80, 4)).value
+                row = self.row_determine(date, game, awayteam, ha, at)
                 hal = x[at.index(ha) + 1]
-                home = hal[0][0]
-                away = hal[0][1]
-                st.range(row, 5).value = home[0]
-                st.range(row, 6).value = away[0]
-                if len(home[1]) > 0:
-                    try:
-                        st.range(row, 5).api.AddComment('\n'.join(home[1]))
-                    except:
-                        st.range(row, 5).api.Comment.Text('\n'.join(home[1]))
-                    st.range(row, 5).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
-                    st.range(row, 5).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
-                if len(away[1]) > 0:
-                    try:
-                        st.range(row, 6).api.AddComment('\n'.join(away[1]))
-                    except:
-                        st.range(row, 6).api.Comment.Text('\n'.join(away[1]))
-                    st.range(row, 6).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
-                    st.range(row, 6).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
-                if home[2] == ['red']:
-                    st.range(row, 5).api.Interior.Color = 255
-                if away[2] == ['red']:
-                    st.range(row, 6).api.Interior.Color = 255
 
-                st.range((row, 19), (row, 25)).value = hal[1]
-
-                for name in hal[2][0]:
-                    ind = 0
-                    data = hal[2][0][name]
-                    if name in plist:
-                        ind = plist.index(name)
-                    elif hal[2][1][name] in nlist:
-                        ind = nlist.index(hal[2][1][name])
-
-                    if ind == 0:
-                        print(ha, '-', name, 'error')
-                    else:
-                        result[ind] = ''.join(data[1])
-                        col = ind + 29
-                        if data[2][0] == 'Bold':
-                            st.range(row, col).api.Font.Bold = True
-                        if data[2][1] == 'red':
-                            st.range(row, col).api.Font.ColorIndex = 3
-                        if data[2][1] == 'blue':
-                            st.range(row, col).api.Font.ColorIndex = 5
-                        if data[2][2] == 'yellow':
-                            st.range(row, col).api.Interior.Color = 65535
-                        if data[2][2] == 'red':
-                            st.range(row, col).api.Interior.Color = 255
-                        if data[2][3] == 'I':
-                            st.range(row, col).api.Font.Italic = True
-                        if len(data[3]) > 0:
-                            try:
-                                st.range(row, col).api.AddComment('\n'.join(data[3]))
-                            except:
-                                st.range(row, col).api.Comment.Text('\n'.join(data[3]))
-                            st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
-                            st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
-                st.range((row, 29), (row, 80)).value = result
-                og = hal[3]
-                if og > 0:
-                    st.range(row, plist.index('OG') + 29).value = og
+                self.to_sheet_all(st, row, hal, ha)
 
             else:
                 print(ha, ' not in PS')
@@ -1693,91 +1544,171 @@ class Sele(object):
         for ha in at:
             if ha in wsc_ps_dic:
                 st = wb.sheets[wsc_ps_dic[ha]]
-                row = int(input('%s row:' % ha))
-                plist = st.range((8, 29), (8, 80)).value
-                nlist = st.range((6, 29), (6, 80)).value
-                pldic = {'ú': 'u', 'é': 'e', 'É': 'E'}
 
-                def pl_2(l):
-                    l2 = []
-                    for ll in l:
-                        ll2 = str(ll)
-                        for p in pldic:
-                            ll2 = ll2.replace(p, pldic[p])
-                        l2.append(ll2)
-                    return l2
+                date = datetime.datetime.strptime(x[0][3], '%d/%m/%Y %H:%M:%S').date()
+                awayteam = at[1 - at.index(ha)]
+                if awayteam in wsc_game_dic:
+                    awayteam = wsc_game_dic[awayteam]
+                game = st.range((10, 1), (80, 4)).value
+                row = self.row_determine(date, game, awayteam, ha, at)
 
-                pl2 = pl_2(plist)
-                result = st.range((row, 29), (row, 80)).value
-                st.range((row, 29), (row, 80)).api.Font.Bold = False
-                st.range((row, 29), (row, 80)).api.Font.ColorIndex = 1
                 hal = x[at.index(ha) + 1]
-                home = hal[0][0]
-                away = hal[0][1]
-                st.range(row, 5).value = home[0]
-                st.range(row, 6).value = away[0]
-                if len(home[1]) > 0:
-                    try:
-                        st.range(row, 5).api.AddComment('\n'.join(home[1]))
-                    except:
-                        st.range(row, 5).api.Comment.Text('\n'.join(home[1]))
-                    st.range(row, 5).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
-                    st.range(row, 5).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
-                if len(away[1]) > 0:
-                    try:
-                        st.range(row, 6).api.AddComment('\n'.join(away[1]))
-                    except:
-                        st.range(row, 6).api.Comment.Text('\n'.join(away[1]))
-                    st.range(row, 6).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
-                    st.range(row, 6).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
-                if 'red' in home[2]:
-                    st.range(row, 5).api.Interior.Color = 255
-                if 'red' in away[2]:
-                    st.range(row, 6).api.Interior.Color = 255
 
-                st.range((row, 19), (row, 25)).value = hal[1]
-
-                for name in hal[2][0]:
-                    ind = 0
-                    data = hal[2][0][name]
-                    if name in plist:
-                        ind = plist.index(name)
-                    elif name in pl2:
-                        ind = pl2.index(name)
-                    elif hal[2][1][name] in nlist:
-                        ind = nlist.index(hal[2][1][name])
-
-                    if ind == 0:
-                        print(ha, '-', name, 'error')
-                    else:
-                        result[ind] = ''.join(data[1])
-                        col = ind + 29
-                        if data[2][0] == 'Bold':
-                            st.range(row, col).api.Font.Bold = True
-                        if data[2][1] == 'red':
-                            st.range(row, col).api.Font.ColorIndex = 3
-                        if data[2][1] == 'blue':
-                            st.range(row, col).api.Font.ColorIndex = 5
-                        if data[2][2] == 'yellow':
-                            st.range(row, col).api.Interior.Color = 65535
-                        if data[2][2] == 'red':
-                            st.range(row, col).api.Interior.Color = 255
-                        if data[2][3] == 'I':
-                            st.range(row, col).api.Font.Italic = True
-                        if len(data[3]) > 0:
-                            try:
-                                st.range(row, col).api.AddComment('\n'.join(data[3]))
-                            except:
-                                st.range(row, col).api.Comment.Text('\n'.join(data[3]))
-                            st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
-                            st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
-                st.range((row, 29), (row, 80)).value = result
-                og = hal[3]
-                if og > 0:
-                    st.range(row, plist.index('OG') + 29).value = og
+                self.to_sheet_pfl(st, row, hal, ha)
 
             else:
                 print(ha, ' not in PS')
+
+    def to_sheet_all(self, st, row, hal, ha):
+        plist = st.range((8, 29), (8, 80)).value
+        nlist = st.range((6, 29), (6, 80)).value
+        result = st.range((row, 29), (row, 80)).value
+        st.range((row, 29), (row, 80)).api.Font.Bold = False
+        st.range((row, 29), (row, 80)).api.Font.ColorIndex = 1
+
+        home = hal[0][0]
+        away = hal[0][1]
+        st.range(row, 5).value = home[0]
+        st.range(row, 6).value = away[0]
+        if len(home[1]) > 0:
+            try:
+                st.range(row, 5).api.AddComment('\n'.join(home[1]))
+            except:
+                st.range(row, 5).api.Comment.Text('\n'.join(home[1]))
+            st.range(row, 5).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
+            st.range(row, 5).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
+        if len(away[1]) > 0:
+            try:
+                st.range(row, 6).api.AddComment('\n'.join(away[1]))
+            except:
+                st.range(row, 6).api.Comment.Text('\n'.join(away[1]))
+            st.range(row, 6).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
+            st.range(row, 6).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
+        if home[2] == ['red']:
+            st.range(row, 5).api.Interior.Color = 255
+        if away[2] == ['red']:
+            st.range(row, 6).api.Interior.Color = 255
+
+        st.range((row, 19), (row, 25)).value = hal[1]
+
+        for name in hal[2][0]:
+            ind = 0
+            data = hal[2][0][name]
+            if name in plist:
+                ind = plist.index(name)
+            elif hal[2][1][name] in nlist:
+                ind = nlist.index(hal[2][1][name])
+
+            if ind == 0:
+                print(ha, '-', name, 'error')
+            else:
+                result[ind] = ''.join(data[1])
+                col = ind + 29
+                if data[2][0] == 'Bold':
+                    st.range(row, col).api.Font.Bold = True
+                if data[2][1] == 'red':
+                    st.range(row, col).api.Font.ColorIndex = 3
+                if data[2][1] == 'blue':
+                    st.range(row, col).api.Font.ColorIndex = 5
+                if data[2][2] == 'yellow':
+                    st.range(row, col).api.Interior.Color = 65535
+                if data[2][2] == 'red':
+                    st.range(row, col).api.Interior.Color = 255
+                if data[2][3] == 'I':
+                    st.range(row, col).api.Font.Italic = True
+                if len(data[3]) > 0:
+                    try:
+                        st.range(row, col).api.AddComment('\n'.join(data[3]))
+                    except:
+                        st.range(row, col).api.Comment.Text('\n'.join(data[3]))
+                    st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
+                    st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
+        st.range((row, 29), (row, 80)).value = result
+        og = hal[3]
+        if og > 0:
+            st.range(row, plist.index('OG') + 29).value = og
+
+    def to_sheet_pfl(self, st, row, hal, ha):
+        plist = st.range((8, 29), (8, 80)).value
+        nlist = st.range((6, 29), (6, 80)).value
+        pldic = {'ú': 'u', 'é': 'e', 'É': 'E'}
+
+        def pl_2(l):
+            l2 = []
+            for ll in l:
+                ll2 = str(ll)
+                for p in pldic:
+                    ll2 = ll2.replace(p, pldic[p])
+                l2.append(ll2)
+            return l2
+
+        pl2 = pl_2(plist)
+        result = st.range((row, 29), (row, 80)).value
+        st.range((row, 29), (row, 80)).api.Font.Bold = False
+        st.range((row, 29), (row, 80)).api.Font.ColorIndex = 1
+        home = hal[0][0]
+        away = hal[0][1]
+        st.range(row, 5).value = home[0]
+        st.range(row, 6).value = away[0]
+        if len(home[1]) > 0:
+            try:
+                st.range(row, 5).api.AddComment('\n'.join(home[1]))
+            except:
+                st.range(row, 5).api.Comment.Text('\n'.join(home[1]))
+            st.range(row, 5).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
+            st.range(row, 5).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
+        if len(away[1]) > 0:
+            try:
+                st.range(row, 6).api.AddComment('\n'.join(away[1]))
+            except:
+                st.range(row, 6).api.Comment.Text('\n'.join(away[1]))
+            st.range(row, 6).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
+            st.range(row, 6).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
+        if 'red' in home[2]:
+            st.range(row, 5).api.Interior.Color = 255
+        if 'red' in away[2]:
+            st.range(row, 6).api.Interior.Color = 255
+
+        st.range((row, 19), (row, 25)).value = hal[1]
+
+        for name in hal[2][0]:
+            ind = 0
+            data = hal[2][0][name]
+            if name in plist:
+                ind = plist.index(name)
+            elif name in pl2:
+                ind = pl2.index(name)
+            elif hal[2][1][name] in nlist:
+                ind = nlist.index(hal[2][1][name])
+
+            if ind == 0:
+                print(ha, '-', name, 'error')
+            else:
+                result[ind] = ''.join(data[1])
+                col = ind + 29
+                if data[2][0] == 'Bold':
+                    st.range(row, col).api.Font.Bold = True
+                if data[2][1] == 'red':
+                    st.range(row, col).api.Font.ColorIndex = 3
+                if data[2][1] == 'blue':
+                    st.range(row, col).api.Font.ColorIndex = 5
+                if data[2][2] == 'yellow':
+                    st.range(row, col).api.Interior.Color = 65535
+                if data[2][2] == 'red':
+                    st.range(row, col).api.Interior.Color = 255
+                if data[2][3] == 'I':
+                    st.range(row, col).api.Font.Italic = True
+                if len(data[3]) > 0:
+                    try:
+                        st.range(row, col).api.AddComment('\n'.join(data[3]))
+                    except:
+                        st.range(row, col).api.Comment.Text('\n'.join(data[3]))
+                    st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
+                    st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
+        st.range((row, 29), (row, 80)).value = result
+        og = hal[3]
+        if og > 0:
+            st.range(row, plist.index('OG') + 29).value = og
 
 
 class Socc(object):
