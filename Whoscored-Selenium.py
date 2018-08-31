@@ -620,7 +620,8 @@ def main_whoscored(matchcenterurl):
 
 
 #'https://www.whoscored.com/Matches/1201922/Live/Germany-Bundesliga-2017-2018-Borussia-Dortmund-Schalke-04'
-url = 'https://www.whoscored.com/Regions/81/Tournaments/3/Seasons/6902/Stages/15243/Fixtures/Germany-Bundesliga-2017-2018'
+# url = 'https://www.whoscored.com/Regions/81/Tournaments/3/Seasons/6902/Stages/15243/Fixtures/Germany-Bundesliga-2017-2018'
+url = input('url:')
 main_whoscored(url)
 
 
