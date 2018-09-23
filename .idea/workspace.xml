@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09926ea5-0ba3-4fdf-b2a9-b78671f39c27" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/Soccerway_Func.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Whoscored_PS_UI.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/EPL-Selenium.py" afterPath="$PROJECT_DIR$/Whoscored-Game-Selenium.py" />
       <change beforePath="$PROJECT_DIR$/Selenium_Func.py" afterPath="$PROJECT_DIR$/Selenium_Func.py" />
+      <change beforePath="$PROJECT_DIR$/Soccerway.py" afterPath="$PROJECT_DIR$/Soccerway.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,18 +17,22 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Selenium$Whoscored_Selenium.coverage" NAME="Whoscored-Selenium Coverage Results" MODIFIED="1533885959794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Selenium$Selenium_Func.coverage" NAME="Selenium_Func Coverage Results" MODIFIED="1535521839884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Selenium$Soccerway.coverage" NAME="Soccerway Coverage Results" MODIFIED="1535521432338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Selenium$test3__1_.coverage" NAME="test3 (1) Coverage Results" MODIFIED="1521645797342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Selenium$test4.coverage" NAME="test4 Coverage Results" MODIFIED="1521643862774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Selenium$Player_V3.coverage" NAME="Player_V3 Coverage Results" MODIFIED="1534247230922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../soccerwayV2" />
     <SUITE FILE_PATH="coverage/Selenium$PlayerSheetUpdate.coverage" NAME="PlayerSheetUpdate Coverage Results" MODIFIED="1534853001467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../soccerwayV2" />
-    <SUITE FILE_PATH="coverage/Selenium$json_test.coverage" NAME="json-test Coverage Results" MODIFIED="1521778720086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Selenium$NTL_reports.coverage" NAME="NTL-reports Coverage Results" MODIFIED="1534050350425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exe/NTLreport" />
     <SUITE FILE_PATH="coverage/Selenium$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1521125516054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../soccerwayV2" />
     <SUITE FILE_PATH="coverage/Selenium$test_1.coverage" NAME="test 1 Coverage Results" MODIFIED="1534244411715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Selenium$Soccerway_Func.coverage" NAME="Soccerway_Func Coverage Results" MODIFIED="1537270416434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Selenium$EPL_Selenium.coverage" NAME="EPL-Selenium Coverage Results" MODIFIED="1533886400499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Selenium$run.coverage" NAME="run Coverage Results" MODIFIED="1536560645359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exe/flask/tcm" />
+    <SUITE FILE_PATH="coverage/Selenium$Whoscored_PS_UI.coverage" NAME="Whoscored_PS_UI Coverage Results" MODIFIED="1537672090580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Selenium$Whoscored_Selenium.coverage" NAME="Whoscored-Selenium Coverage Results" MODIFIED="1533885959794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Selenium$Selenium_Func.coverage" NAME="Selenium_Func Coverage Results" MODIFIED="1535521839884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Selenium$Whoscored_Game_Selenium.coverage" NAME="Whoscored-Game-Selenium Coverage Results" MODIFIED="1535875956802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Selenium$Soccerway.coverage" NAME="Soccerway Coverage Results" MODIFIED="1536069458002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Selenium$test3__1_.coverage" NAME="test3 (1) Coverage Results" MODIFIED="1521645797342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Selenium$json_test.coverage" NAME="json-test Coverage Results" MODIFIED="1521778720086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -44,82 +53,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Selenium_Func.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Selenium_Func.py">
+      <file leaf-file-name="Whoscored_PS_UI.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Whoscored_PS_UI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="793">
+              <caret line="848" column="29" lean-forward="false" selection-start-line="848" selection-start-column="29" selection-end-line="848" selection-end-column="29" />
               <folding>
-                <element signature="e#375#69073#0" expanded="false" />
-                <element signature="e#2020#8544#0" expanded="false" />
-                <element signature="e#2073#3306#0" expanded="false" />
-                <element signature="e#3446#5118#0" expanded="false" />
-                <element signature="e#5790#5965#0" expanded="false" />
-                <element signature="e#8590#9190#0" expanded="false" />
-                <element signature="e#9244#9836#0" expanded="false" />
-                <element signature="e#9883#17702#0" expanded="false" />
-                <element signature="e#10270#10855#0" expanded="false" />
-                <element signature="e#13398#14956#0" expanded="false" />
-                <element signature="e#15234#17489#0" expanded="false" />
-                <element signature="e#17738#19117#0" expanded="false" />
-                <element signature="e#18135#18720#0" expanded="false" />
-                <element signature="e#18839#19076#0" expanded="false" />
-                <element signature="e#19157#27849#0" expanded="false" />
-                <element signature="e#21737#22133#0" expanded="false" />
-                <element signature="e#23468#23566#0" expanded="false" />
-                <element signature="e#23831#26483#0" expanded="false" />
-                <element signature="e#26553#27400#0" expanded="false" />
-                <element signature="e#27894#36834#0" expanded="false" />
-                <element signature="e#36875#38983#0" expanded="false" />
-                <element signature="e#37079#37713#0" expanded="false" />
-                <element signature="e#37737#38385#0" expanded="false" />
-                <element signature="e#38698#38896#0" expanded="false" />
-                <element signature="e#39024#41069#0" expanded="false" />
-                <element signature="e#39024#39059#0" expanded="false" />
-                <element signature="e#39307#39874#0" expanded="false" />
-                <element signature="e#39898#40474#0" expanded="false" />
-                <element signature="e#40637#41069#0" expanded="false" />
-                <element signature="e#40784#40982#0" expanded="false" />
-                <element signature="e#41109#46346#0" expanded="false" />
-                <element signature="e#41109#41144#0" expanded="false" />
-                <element signature="e#41313#41947#0" expanded="false" />
-                <element signature="e#41971#42619#0" expanded="false" />
-                <element signature="e#46395#52369#0" expanded="false" />
-                <element signature="e#46395#46430#0" expanded="false" />
-                <element signature="e#46678#47245#0" expanded="false" />
-                <element signature="e#47269#47845#0" expanded="false" />
-                <element signature="e#48659#48905#0" expanded="false" />
-                <element signature="e#52418#57987#0" expanded="false" />
-                <element signature="e#52622#53256#0" expanded="false" />
-                <element signature="e#53280#53928#0" expanded="false" />
-                <element signature="e#55542#55922#0" expanded="false" />
-                <element signature="e#56454#57742#0" expanded="false" />
-                <element signature="e#58032#60291#0" expanded="false" />
-                <element signature="e#58236#58870#0" expanded="false" />
-                <element signature="e#58894#59542#0" expanded="false" />
-                <element signature="e#60336#62533#0" expanded="false" />
-                <element signature="e#60336#60371#0" expanded="false" />
-                <element signature="e#60619#61186#0" expanded="false" />
-                <element signature="e#61210#61786#0" expanded="false" />
-                <element signature="e#62589#65618#0" expanded="false" />
-                <element signature="e#65674#69073#0" expanded="false" />
-                <element signature="e#65845#66043#0" expanded="false" />
-                <element signature="e#69100#136153#0" expanded="false" />
-                <element signature="e#71634#88069#0" expanded="false" />
-                <element signature="e#71819#72747#0" expanded="false" />
-                <element signature="e#72905#73062#0" expanded="false" />
-                <element signature="e#73115#73397#0" expanded="false" />
-                <element signature="e#73763#78701#0" expanded="false" />
-                <element signature="e#86192#86297#0" expanded="false" />
-                <element signature="e#88112#126796#0" expanded="false" />
-                <element signature="e#102666#107435#0" expanded="false" />
-                <element signature="e#126841#135877#0" expanded="false" />
-                <element signature="e#126854#127859#0" expanded="false" />
-                <element signature="e#127883#128940#0" expanded="false" />
-                <element signature="e#129757#130187#0" expanded="false" />
-                <element signature="e#130702#131082#0" expanded="false" />
-                <element signature="e#131140#131520#0" expanded="false" />
-                <element signature="e#131816#133551#0" expanded="false" />
+                <element signature="e#32#62#0" expanded="true" />
+                <element signature="e#327#5620#0" expanded="false" />
+                <element signature="e#4577#5272#0" expanded="false" />
+                <element signature="e#5306#5339#0" expanded="false" />
+                <element signature="e#5373#5390#0" expanded="false" />
+                <element signature="e#5423#5438#0" expanded="false" />
+                <element signature="e#5472#5484#0" expanded="false" />
+                <element signature="e#5517#5529#0" expanded="false" />
+                <element signature="e#5563#5575#0" expanded="false" />
+                <element signature="e#5711#7247#0" expanded="false" />
+                <element signature="e#7293#13817#0" expanded="false" />
+                <element signature="e#7346#8579#0" expanded="false" />
+                <element signature="e#8719#10391#0" expanded="false" />
+                <element signature="e#11063#11238#0" expanded="false" />
+                <element signature="e#13863#14463#0" expanded="false" />
+                <element signature="e#14517#15109#0" expanded="false" />
+                <element signature="e#15156#22975#0" expanded="false" />
+                <element signature="e#15543#16128#0" expanded="false" />
+                <element signature="e#18671#20229#0" expanded="false" />
+                <element signature="e#20507#22762#0" expanded="false" />
+                <element signature="e#23011#24390#0" expanded="false" />
+                <element signature="e#23408#23993#0" expanded="false" />
+                <element signature="e#24112#24349#0" expanded="false" />
+                <element signature="e#24430#33122#0" expanded="false" />
+                <element signature="e#27010#27406#0" expanded="false" />
+                <element signature="e#28741#28839#0" expanded="false" />
+                <element signature="e#29104#31756#0" expanded="false" />
+                <element signature="e#31826#32673#0" expanded="false" />
+                <element signature="e#38416#41014#0" expanded="false" />
+                <element signature="e#41113#41961#0" expanded="false" />
+                <element signature="e#42520#44628#0" expanded="false" />
+                <element signature="e#42724#43358#0" expanded="false" />
+                <element signature="e#43382#44030#0" expanded="false" />
+                <element signature="e#44669#46714#0" expanded="false" />
+                <element signature="e#44669#44704#0" expanded="false" />
+                <element signature="e#44952#45519#0" expanded="false" />
+                <element signature="e#45543#46119#0" expanded="false" />
+                <element signature="e#46282#46714#0" expanded="false" />
+                <element signature="e#46429#46627#0" expanded="false" />
+                <element signature="e#46754#52029#0" expanded="false" />
+                <element signature="e#46754#46789#0" expanded="false" />
+                <element signature="e#46958#47592#0" expanded="false" />
+                <element signature="e#47616#48264#0" expanded="false" />
+                <element signature="e#52078#58094#0" expanded="false" />
+                <element signature="e#52078#52113#0" expanded="false" />
+                <element signature="e#52361#52928#0" expanded="false" />
+                <element signature="e#52952#53528#0" expanded="false" />
+                <element signature="e#54342#54588#0" expanded="false" />
+                <element signature="e#58143#63754#0" expanded="false" />
+                <element signature="e#58347#58981#0" expanded="false" />
+                <element signature="e#59005#59653#0" expanded="false" />
+                <element signature="e#61267#61647#0" expanded="false" />
+                <element signature="e#62179#63467#0" expanded="false" />
+                <element signature="e#63799#66058#0" expanded="false" />
+                <element signature="e#64003#64637#0" expanded="false" />
+                <element signature="e#64661#65309#0" expanded="false" />
+                <element signature="e#66108#68720#0" expanded="false" />
+                <element signature="e#66312#66946#0" expanded="false" />
+                <element signature="e#66970#67618#0" expanded="false" />
+                <element signature="e#67664#68047#0" expanded="false" />
+                <element signature="e#68765#70962#0" expanded="false" />
+                <element signature="e#68765#68800#0" expanded="false" />
+                <element signature="e#69048#69615#0" expanded="false" />
+                <element signature="e#69639#70215#0" expanded="false" />
+                <element signature="e#71018#74081#0" expanded="false" />
+                <element signature="e#74142#77211#0" expanded="false" />
+                <element signature="e#75578#77023#0" expanded="false" />
+                <element signature="e#77267#80700#0" expanded="false" />
+                <element signature="e#77438#77636#0" expanded="false" />
+                <element signature="e#78015#78355#0" expanded="false" />
+                <element signature="e#79003#80512#0" expanded="false" />
+                <element signature="e#81247#81984#0" expanded="false" />
+                <element signature="e#82001#82739#0" expanded="false" />
+                <element signature="e#82757#82955#0" expanded="false" />
+                <element signature="e#82974#83233#0" expanded="false" />
+                <element signature="e#83253#83867#0" expanded="false" />
+                <element signature="e#83890#85313#0" expanded="false" />
+                <element signature="e#85344#86384#0" expanded="false" />
+                <element signature="e#85379#85870#0" expanded="false" />
+                <element signature="e#85906#86018#0" expanded="false" />
+                <element signature="e#86054#86166#0" expanded="false" />
+                <element signature="e#86202#86384#0" expanded="false" />
+                <element signature="e#86415#86678#0" expanded="false" />
+                <element signature="e#86712#86906#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -128,39 +151,61 @@
       <file leaf-file-name="Soccerway.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Soccerway.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="230">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
-                <element signature="e#32#47#0" expanded="true" />
+                <element signature="e#33#53#0" expanded="true" />
+                <element signature="e#668#702#0" expanded="false" />
+                <element signature="e#723#942#0" expanded="false" />
+                <element signature="e#964#1009#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EPL-Selenium.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EPL-Selenium.py">
+      <file leaf-file-name="Whoscored-Game-Selenium.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Whoscored-Game-Selenium.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="129" column="57" lean-forward="false" selection-start-line="129" selection-start-column="57" selection-end-line="129" selection-end-column="57" />
+            <state relative-caret-position="292">
+              <caret line="261" column="14" lean-forward="true" selection-start-line="261" selection-start-column="14" selection-end-line="261" selection-end-column="14" />
               <folding>
-                <element signature="e#32#62#0" expanded="true" />
-                <element signature="e#923#961#0" expanded="false" />
-                <element signature="e#2883#4747#0" expanded="false" />
-                <element signature="e#3509#4052#0" expanded="false" />
-                <element signature="e#4096#4216#0" expanded="false" />
-                <element signature="e#4260#4380#0" expanded="false" />
-                <element signature="e#4424#4622#0" expanded="false" />
-                <element signature="e#4764#6628#0" expanded="false" />
-                <element signature="e#5390#5933#0" expanded="false" />
-                <element signature="e#6305#6503#0" expanded="false" />
-                <element signature="e#6646#6844#0" expanded="false" />
-                <element signature="e#6863#7122#0" expanded="false" />
-                <element signature="e#7142#8367#0" expanded="false" />
-                <element signature="e#7654#7910#0" expanded="false" />
-                <element signature="e#7946#8058#0" expanded="false" />
-                <element signature="e#8094#8254#0" expanded="false" />
-                <element signature="e#8370#8469#0" expanded="false" />
-                <element signature="e#9049#9076#0" expanded="false" />
+                <element signature="e#949#987#0" expanded="false" />
+                <element signature="e#2909#3646#0" expanded="false" />
+                <element signature="e#3663#4401#0" expanded="false" />
+                <element signature="e#4419#4617#0" expanded="false" />
+                <element signature="e#4636#4895#0" expanded="false" />
+                <element signature="e#4915#5529#0" expanded="false" />
+                <element signature="e#5552#6975#0" expanded="false" />
+                <element signature="e#7006#8046#0" expanded="false" />
+                <element signature="e#8077#8340#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Selenium_Func.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Selenium_Func.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-865">
+              <caret line="744" column="29" lean-forward="false" selection-start-line="744" selection-start-column="29" selection-end-line="744" selection-end-column="29" />
+              <folding>
+                <element signature="e#438#1974#0" expanded="false" />
+                <element signature="e#2020#8544#0" expanded="false" />
+                <element signature="e#8590#9190#0" expanded="false" />
+                <element signature="e#9244#9836#0" expanded="false" />
+                <element signature="e#9883#17702#0" expanded="false" />
+                <element signature="e#17738#19117#0" expanded="false" />
+                <element signature="e#19157#27849#0" expanded="false" />
+                <element signature="e#37247#39355#0" expanded="false" />
+                <element signature="e#39396#41441#0" expanded="false" />
+                <element signature="e#39679#40246#0" expanded="false" />
+                <element signature="e#40270#40846#0" expanded="false" />
+                <element signature="e#41481#46756#0" expanded="false" />
+                <element signature="e#46805#52821#0" expanded="false" />
+                <element signature="e#52870#58481#0" expanded="false" />
+                <element signature="e#58526#60785#0" expanded="false" />
+                <element signature="e#60835#63447#0" expanded="false" />
+                <element signature="e#63492#65689#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -177,13 +222,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ginfo</find>
-      <find>pd</find>
-      <find>inter</find>
-      <find>comment</find>
-      <find>255</find>
-      <find>color</find>
-      <find>goal</find>
       <find>xs</find>
       <find>b</find>
       <find>click</find>
@@ -192,7 +230,6 @@
       <find>tt</find>
       <find>red</find>
       <find>re</find>
-      <find>og</find>
       <find>OG</find>
       <find>goal += 1</find>
       <find>hal[2][0]</find>
@@ -201,8 +238,20 @@
       <find>player</find>
       <find>sub[3]</find>
       <find>getsoccerway</find>
-      <find>json</find>
       <find>whsc_match</find>
+      <find>json</find>
+      <find>og</find>
+      <find>st.range((row, 29), (row, 80)).value = result</find>
+      <find>error</find>
+      <find>self.self</find>
+      <find>None</find>
+      <find>AddComment</find>
+      <find>times</find>
+      <find>colorindex</find>
+      <find>pd</find>
+      <find>Adde</find>
+      <find>bs</find>
+      <find>men</find>
     </findStrings>
     <replaceStrings>
       <replace>gdic</replace>
@@ -210,6 +259,7 @@
       <replace>hal[1]</replace>
       <replace>sub</replace>
       <replace>comment</replace>
+      <replace>self.selfname</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -233,9 +283,13 @@
         <option value="$PROJECT_DIR$/test 1.py" />
         <option value="$PROJECT_DIR$/../soccerwayV2/Player_V3.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.js" />
-        <option value="$PROJECT_DIR$/Soccerway.py" />
         <option value="$PROJECT_DIR$/EPL-Selenium.py" />
+        <option value="$PROJECT_DIR$/Whoscored-Game-Selenium.py" />
+        <option value="$PROJECT_DIR$/../exe/flask/tcm/tcm/models.py" />
+        <option value="$PROJECT_DIR$/Soccerway.py" />
+        <option value="$PROJECT_DIR$/Soccerway_Func.py" />
         <option value="$PROJECT_DIR$/Selenium_Func.py" />
+        <option value="$PROJECT_DIR$/Whoscored_PS_UI.py" />
       </list>
     </option>
   </component>
@@ -246,9 +300,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="1099" />
-    <option name="height" value="462" />
+    <option name="x" value="952" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -268,7 +322,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -286,6 +339,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -308,83 +362,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.EPL-Selenium">
-    <configuration name="EPL-Selenium" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Selenium" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EPL-Selenium.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="PlayerSheetUpdate" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../soccerwayV2" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Selenium" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../soccerwayV2/PlayerSheetUpdate.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="Player_V3" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../soccerwayV2" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Selenium" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../soccerwayV2/Player_V3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="Selenium_Func" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Selenium" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Selenium_Func.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.Whoscored-Game-Selenium">
     <configuration name="Soccerway" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -404,20 +382,96 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="Soccerway_Func" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Selenium" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Soccerway_Func.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Whoscored-Game-Selenium" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Selenium" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Whoscored-Game-Selenium.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Whoscored_PS_UI" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Selenium" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Whoscored_PS_UI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../exe/flask/tcm" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Selenium" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../exe/flask/tcm/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.EPL-Selenium" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Player_V3" />
-      <item index="2" class="java.lang.String" itemvalue="Python.PlayerSheetUpdate" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Soccerway" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Selenium_Func" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Soccerway" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Whoscored-Game-Selenium" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Whoscored_PS_UI" />
+      <item index="3" class="java.lang.String" itemvalue="Python.run" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Soccerway_Func" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.EPL-Selenium" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Selenium_Func" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Whoscored-Game-Selenium" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Whoscored_PS_UI" />
         <item index="2" class="java.lang.String" itemvalue="Python.Soccerway" />
-        <item index="3" class="java.lang.String" itemvalue="Python.PlayerSheetUpdate" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Player_V3" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Soccerway_Func" />
+        <item index="4" class="java.lang.String" itemvalue="Python.run" />
       </list>
     </recent_temporary>
   </component>
@@ -448,14 +502,14 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3899658" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30672747" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13948497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18669528" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32296136" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44527897" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990878" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -507,53 +561,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="39" />
+      <option name="time" value="49" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Whoscored-Selenium.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1702">
-          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test 1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test 2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="22" column="37" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../soccerwayV2/test3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Whoscored-Selenium.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="31" column="17" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test 1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test 2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -808,13 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Whoscored-Selenium.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-762">
-          <caret line="453" column="0" lean-forward="false" selection-start-line="453" selection-start-column="0" selection-end-line="455" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/610d3059/109a2f91-63aa-4290-bff7-2b47fdda4cc4/epl.2018player">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -838,118 +843,194 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EPL-Selenium.py">
+    <entry file="file://$PROJECT_DIR$/../exe/flask/tcm/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="129" column="57" lean-forward="false" selection-start-line="129" selection-start-column="57" selection-end-line="129" selection-end-column="57" />
-          <folding>
-            <element signature="e#32#62#0" expanded="true" />
-            <element signature="e#923#961#0" expanded="false" />
-            <element signature="e#2883#4747#0" expanded="false" />
-            <element signature="e#3509#4052#0" expanded="false" />
-            <element signature="e#4096#4216#0" expanded="false" />
-            <element signature="e#4260#4380#0" expanded="false" />
-            <element signature="e#4424#4622#0" expanded="false" />
-            <element signature="e#4764#6628#0" expanded="false" />
-            <element signature="e#5390#5933#0" expanded="false" />
-            <element signature="e#6305#6503#0" expanded="false" />
-            <element signature="e#6646#6844#0" expanded="false" />
-            <element signature="e#6863#7122#0" expanded="false" />
-            <element signature="e#7142#8367#0" expanded="false" />
-            <element signature="e#7654#7910#0" expanded="false" />
-            <element signature="e#7946#8058#0" expanded="false" />
-            <element signature="e#8094#8254#0" expanded="false" />
-            <element signature="e#8370#8469#0" expanded="false" />
-            <element signature="e#9049#9076#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="138">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../exe/flask/tcm/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../exe/flask/tcm/tcm/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../exe/flask/tcm/tcm/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Whoscored-Selenium.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1817">
+          <caret line="453" column="0" lean-forward="false" selection-start-line="453" selection-start-column="0" selection-end-line="455" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Soccerway_Func.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Soccerway.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="230">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#32#47#0" expanded="true" />
+            <element signature="e#33#53#0" expanded="true" />
+            <element signature="e#668#702#0" expanded="false" />
+            <element signature="e#723#942#0" expanded="false" />
+            <element signature="e#964#1009#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Whoscored_PS_UI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="793">
+          <caret line="848" column="29" lean-forward="false" selection-start-line="848" selection-start-column="29" selection-end-line="848" selection-end-column="29" />
+          <folding>
+            <element signature="e#32#62#0" expanded="true" />
+            <element signature="e#327#5620#0" expanded="false" />
+            <element signature="e#4577#5272#0" expanded="false" />
+            <element signature="e#5306#5339#0" expanded="false" />
+            <element signature="e#5373#5390#0" expanded="false" />
+            <element signature="e#5423#5438#0" expanded="false" />
+            <element signature="e#5472#5484#0" expanded="false" />
+            <element signature="e#5517#5529#0" expanded="false" />
+            <element signature="e#5563#5575#0" expanded="false" />
+            <element signature="e#5711#7247#0" expanded="false" />
+            <element signature="e#7293#13817#0" expanded="false" />
+            <element signature="e#7346#8579#0" expanded="false" />
+            <element signature="e#8719#10391#0" expanded="false" />
+            <element signature="e#11063#11238#0" expanded="false" />
+            <element signature="e#13863#14463#0" expanded="false" />
+            <element signature="e#14517#15109#0" expanded="false" />
+            <element signature="e#15156#22975#0" expanded="false" />
+            <element signature="e#15543#16128#0" expanded="false" />
+            <element signature="e#18671#20229#0" expanded="false" />
+            <element signature="e#20507#22762#0" expanded="false" />
+            <element signature="e#23011#24390#0" expanded="false" />
+            <element signature="e#23408#23993#0" expanded="false" />
+            <element signature="e#24112#24349#0" expanded="false" />
+            <element signature="e#24430#33122#0" expanded="false" />
+            <element signature="e#27010#27406#0" expanded="false" />
+            <element signature="e#28741#28839#0" expanded="false" />
+            <element signature="e#29104#31756#0" expanded="false" />
+            <element signature="e#31826#32673#0" expanded="false" />
+            <element signature="e#38416#41014#0" expanded="false" />
+            <element signature="e#41113#41961#0" expanded="false" />
+            <element signature="e#42520#44628#0" expanded="false" />
+            <element signature="e#42724#43358#0" expanded="false" />
+            <element signature="e#43382#44030#0" expanded="false" />
+            <element signature="e#44669#46714#0" expanded="false" />
+            <element signature="e#44669#44704#0" expanded="false" />
+            <element signature="e#44952#45519#0" expanded="false" />
+            <element signature="e#45543#46119#0" expanded="false" />
+            <element signature="e#46282#46714#0" expanded="false" />
+            <element signature="e#46429#46627#0" expanded="false" />
+            <element signature="e#46754#52029#0" expanded="false" />
+            <element signature="e#46754#46789#0" expanded="false" />
+            <element signature="e#46958#47592#0" expanded="false" />
+            <element signature="e#47616#48264#0" expanded="false" />
+            <element signature="e#52078#58094#0" expanded="false" />
+            <element signature="e#52078#52113#0" expanded="false" />
+            <element signature="e#52361#52928#0" expanded="false" />
+            <element signature="e#52952#53528#0" expanded="false" />
+            <element signature="e#54342#54588#0" expanded="false" />
+            <element signature="e#58143#63754#0" expanded="false" />
+            <element signature="e#58347#58981#0" expanded="false" />
+            <element signature="e#59005#59653#0" expanded="false" />
+            <element signature="e#61267#61647#0" expanded="false" />
+            <element signature="e#62179#63467#0" expanded="false" />
+            <element signature="e#63799#66058#0" expanded="false" />
+            <element signature="e#64003#64637#0" expanded="false" />
+            <element signature="e#64661#65309#0" expanded="false" />
+            <element signature="e#66108#68720#0" expanded="false" />
+            <element signature="e#66312#66946#0" expanded="false" />
+            <element signature="e#66970#67618#0" expanded="false" />
+            <element signature="e#67664#68047#0" expanded="false" />
+            <element signature="e#68765#70962#0" expanded="false" />
+            <element signature="e#68765#68800#0" expanded="false" />
+            <element signature="e#69048#69615#0" expanded="false" />
+            <element signature="e#69639#70215#0" expanded="false" />
+            <element signature="e#71018#74081#0" expanded="false" />
+            <element signature="e#74142#77211#0" expanded="false" />
+            <element signature="e#75578#77023#0" expanded="false" />
+            <element signature="e#77267#80700#0" expanded="false" />
+            <element signature="e#77438#77636#0" expanded="false" />
+            <element signature="e#78015#78355#0" expanded="false" />
+            <element signature="e#79003#80512#0" expanded="false" />
+            <element signature="e#81247#81984#0" expanded="false" />
+            <element signature="e#82001#82739#0" expanded="false" />
+            <element signature="e#82757#82955#0" expanded="false" />
+            <element signature="e#82974#83233#0" expanded="false" />
+            <element signature="e#83253#83867#0" expanded="false" />
+            <element signature="e#83890#85313#0" expanded="false" />
+            <element signature="e#85344#86384#0" expanded="false" />
+            <element signature="e#85379#85870#0" expanded="false" />
+            <element signature="e#85906#86018#0" expanded="false" />
+            <element signature="e#86054#86166#0" expanded="false" />
+            <element signature="e#86202#86384#0" expanded="false" />
+            <element signature="e#86415#86678#0" expanded="false" />
+            <element signature="e#86712#86906#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Selenium_Func.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="-865">
+          <caret line="744" column="29" lean-forward="false" selection-start-line="744" selection-start-column="29" selection-end-line="744" selection-end-column="29" />
           <folding>
-            <element signature="e#375#69073#0" expanded="false" />
+            <element signature="e#438#1974#0" expanded="false" />
             <element signature="e#2020#8544#0" expanded="false" />
-            <element signature="e#2073#3306#0" expanded="false" />
-            <element signature="e#3446#5118#0" expanded="false" />
-            <element signature="e#5790#5965#0" expanded="false" />
             <element signature="e#8590#9190#0" expanded="false" />
             <element signature="e#9244#9836#0" expanded="false" />
             <element signature="e#9883#17702#0" expanded="false" />
-            <element signature="e#10270#10855#0" expanded="false" />
-            <element signature="e#13398#14956#0" expanded="false" />
-            <element signature="e#15234#17489#0" expanded="false" />
             <element signature="e#17738#19117#0" expanded="false" />
-            <element signature="e#18135#18720#0" expanded="false" />
-            <element signature="e#18839#19076#0" expanded="false" />
             <element signature="e#19157#27849#0" expanded="false" />
-            <element signature="e#21737#22133#0" expanded="false" />
-            <element signature="e#23468#23566#0" expanded="false" />
-            <element signature="e#23831#26483#0" expanded="false" />
-            <element signature="e#26553#27400#0" expanded="false" />
-            <element signature="e#27894#36834#0" expanded="false" />
-            <element signature="e#36875#38983#0" expanded="false" />
-            <element signature="e#37079#37713#0" expanded="false" />
-            <element signature="e#37737#38385#0" expanded="false" />
-            <element signature="e#38698#38896#0" expanded="false" />
-            <element signature="e#39024#41069#0" expanded="false" />
-            <element signature="e#39024#39059#0" expanded="false" />
-            <element signature="e#39307#39874#0" expanded="false" />
-            <element signature="e#39898#40474#0" expanded="false" />
-            <element signature="e#40637#41069#0" expanded="false" />
-            <element signature="e#40784#40982#0" expanded="false" />
-            <element signature="e#41109#46346#0" expanded="false" />
-            <element signature="e#41109#41144#0" expanded="false" />
-            <element signature="e#41313#41947#0" expanded="false" />
-            <element signature="e#41971#42619#0" expanded="false" />
-            <element signature="e#46395#52369#0" expanded="false" />
-            <element signature="e#46395#46430#0" expanded="false" />
-            <element signature="e#46678#47245#0" expanded="false" />
-            <element signature="e#47269#47845#0" expanded="false" />
-            <element signature="e#48659#48905#0" expanded="false" />
-            <element signature="e#52418#57987#0" expanded="false" />
-            <element signature="e#52622#53256#0" expanded="false" />
-            <element signature="e#53280#53928#0" expanded="false" />
-            <element signature="e#55542#55922#0" expanded="false" />
-            <element signature="e#56454#57742#0" expanded="false" />
-            <element signature="e#58032#60291#0" expanded="false" />
-            <element signature="e#58236#58870#0" expanded="false" />
-            <element signature="e#58894#59542#0" expanded="false" />
-            <element signature="e#60336#62533#0" expanded="false" />
-            <element signature="e#60336#60371#0" expanded="false" />
-            <element signature="e#60619#61186#0" expanded="false" />
-            <element signature="e#61210#61786#0" expanded="false" />
-            <element signature="e#62589#65618#0" expanded="false" />
-            <element signature="e#65674#69073#0" expanded="false" />
-            <element signature="e#65845#66043#0" expanded="false" />
-            <element signature="e#69100#136153#0" expanded="false" />
-            <element signature="e#71634#88069#0" expanded="false" />
-            <element signature="e#71819#72747#0" expanded="false" />
-            <element signature="e#72905#73062#0" expanded="false" />
-            <element signature="e#73115#73397#0" expanded="false" />
-            <element signature="e#73763#78701#0" expanded="false" />
-            <element signature="e#86192#86297#0" expanded="false" />
-            <element signature="e#88112#126796#0" expanded="false" />
-            <element signature="e#102666#107435#0" expanded="false" />
-            <element signature="e#126841#135877#0" expanded="false" />
-            <element signature="e#126854#127859#0" expanded="false" />
-            <element signature="e#127883#128940#0" expanded="false" />
-            <element signature="e#129757#130187#0" expanded="false" />
-            <element signature="e#130702#131082#0" expanded="false" />
-            <element signature="e#131140#131520#0" expanded="false" />
-            <element signature="e#131816#133551#0" expanded="false" />
+            <element signature="e#37247#39355#0" expanded="false" />
+            <element signature="e#39396#41441#0" expanded="false" />
+            <element signature="e#39679#40246#0" expanded="false" />
+            <element signature="e#40270#40846#0" expanded="false" />
+            <element signature="e#41481#46756#0" expanded="false" />
+            <element signature="e#46805#52821#0" expanded="false" />
+            <element signature="e#52870#58481#0" expanded="false" />
+            <element signature="e#58526#60785#0" expanded="false" />
+            <element signature="e#60835#63447#0" expanded="false" />
+            <element signature="e#63492#65689#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Whoscored-Game-Selenium.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="261" column="14" lean-forward="true" selection-start-line="261" selection-start-column="14" selection-end-line="261" selection-end-column="14" />
+          <folding>
+            <element signature="e#949#987#0" expanded="false" />
+            <element signature="e#2909#3646#0" expanded="false" />
+            <element signature="e#3663#4401#0" expanded="false" />
+            <element signature="e#4419#4617#0" expanded="false" />
+            <element signature="e#4636#4895#0" expanded="false" />
+            <element signature="e#4915#5529#0" expanded="false" />
+            <element signature="e#5552#6975#0" expanded="false" />
+            <element signature="e#7006#8046#0" expanded="false" />
+            <element signature="e#8077#8340#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -6,13 +6,117 @@ import xlwings as xw
 import lxml.html
 from bs4 import BeautifulSoup
 import json
-import time
 import pandas as pd
 import datetime
 import selenium
-import requests
-from xlwings.constants import InsertShiftDirection
-import configparser
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(800, 600)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.listView = QtWidgets.QListView(self.centralwidget)
+        self.listView.setGeometry(QtCore.QRect(40, 110, 256, 271))
+        self.listView.setObjectName("listView")
+        self.verticalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(340, 170, 101, 171))
+        self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.pushButton = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.pushButton.setObjectName("pushButton")
+        self.verticalLayout.addWidget(self.pushButton)
+        self.pushButton_2 = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.verticalLayout.addWidget(self.pushButton_2)
+        self.verticalLayoutWidget_2 = QtWidgets.QWidget(self.centralwidget)
+        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(470, 170, 131, 171))
+        self.verticalLayoutWidget_2.setObjectName("verticalLayoutWidget_2")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_2)
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.pushButton_3 = QtWidgets.QPushButton(self.verticalLayoutWidget_2)
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.verticalLayout_2.addWidget(self.pushButton_3)
+        self.pushButton_4 = QtWidgets.QPushButton(self.verticalLayoutWidget_2)
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.verticalLayout_2.addWidget(self.pushButton_4)
+        self.verticalLayoutWidget_3 = QtWidgets.QWidget(self.centralwidget)
+        self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(630, 130, 131, 291))
+        self.verticalLayoutWidget_3.setObjectName("verticalLayoutWidget_3")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_3)
+        self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.pushButton_5 = QtWidgets.QPushButton(self.verticalLayoutWidget_3)
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.verticalLayout_3.addWidget(self.pushButton_5)
+        self.pushButton_6 = QtWidgets.QPushButton(self.verticalLayoutWidget_3)
+        self.pushButton_6.setObjectName("pushButton_6")
+        self.verticalLayout_3.addWidget(self.pushButton_6)
+        self.pushButton_7 = QtWidgets.QPushButton(self.verticalLayoutWidget_3)
+        self.pushButton_7.setObjectName("pushButton_7")
+        self.verticalLayout_3.addWidget(self.pushButton_7)
+        self.pushButton_8 = QtWidgets.QPushButton(self.verticalLayoutWidget_3)
+        self.pushButton_8.setObjectName("pushButton_8")
+        self.verticalLayout_3.addWidget(self.pushButton_8)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 26))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.pushButton.clicked.connect(me)
+        self.pushButton_2.clicked.connect(mp)
+        self.pushButton_3.clicked.connect(self.cup_full)
+        self.pushButton_4.clicked.connect(self.cup_sum)
+        self.pushButton_5.clicked.connect(self.epl_full)
+        self.pushButton_6.clicked.connect(self.epl_sum)
+        self.pushButton_7.clicked.connect(self.pfl_full)
+        self.pushButton_8.clicked.connect(self.pfl_sum)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.pushButton.setText(_translate("MainWindow", "EPL"))
+        self.pushButton_2.setText(_translate("MainWindow", "PFL"))
+        self.pushButton_3.setText(_translate("MainWindow", "Cup（Full）"))
+        self.pushButton_4.setText(_translate("MainWindow", "Cup（Summary）"))
+        self.pushButton_5.setText(_translate("MainWindow", "EPL Full"))
+        self.pushButton_6.setText(_translate("MainWindow", "EPL Summary"))
+        self.pushButton_7.setText(_translate("MainWindow", "PFL Full"))
+        self.pushButton_8.setText(_translate("MainWindow", "PFL Summary"))
+
+    def __init__(self):
+        self.cf = []
+        self.cs = []
+
+    def cup_full(self):
+        self.cf = cup_a()
+
+    def cup_sum(self):
+        self.cs = cup()
+
+    def epl_full(self):
+        dec(self.cf)
+
+    def epl_sum(self):
+        des(self.cs)
+
+    def pfl_full(self):
+        dpc(self.cf)
+
+    def pfl_sum(self):
+        dps(self.cs)
 
 
 class Sele(object):
@@ -696,7 +800,7 @@ class Sele(object):
         return [[hteam, ateam, x[0], x[1]['datetime']], [[[hscore, hco, hcolor], [ascore, aco, acolor]], homeshot, [hp, pid]],
                 [[[ascore, aco, acolor], [hscore, hco, hcolor]], awayshot, [ap, pid]]]
 
-    # 180903调整og顺序， 180923客队红牌人数
+    # 180903调整og顺序, 180923客队红牌人数
     def df_to_draft2(self, x, tl):
         hteam = x[1]['hteam']
         ateam = x[1]['ateam']
@@ -1866,6 +1970,236 @@ class Sele(object):
         if og > 0:
             st.range(row, plist.index('OG') + 29).value = og
         print('%s Finished' % ha)
+
+
+SF = Sele()
+chrome_options = Options()
+driver = webdriver.Chrome(chrome_options=chrome_options)
+
+wm = SF.whsc_match
+rd = SF.r_to_df
+dd = SF.df_to_draft2
+de = SF.draft_to_epl
+dp = SF.draft_to_pfl
+wms = SF.whsc_match_summary
+rds = SF.r_to_draft_summary
+des = SF.draft_to_epl_summary
+dps = SF.draft_to_pfl_summary
+dec = SF.draft_to_epl_cup
+dpc = SF.draft_to_pfl_cup
+duc = SF.draft_to_unl_cup
+
+url = 'https://www.whoscored.com/Regions/252/Tournaments/2/Seasons/7361/England-Premier-League'
+driver.get(url)
+driver.implicitly_wait(3)
+
+
+def me():
+    dlist = driver.window_handles[1:]
+    for d in dlist:
+        driver.switch_to.window(d)
+        # timeline
+        tree = lxml.html.fromstring(driver.page_source)
+        tr = tree.xpath('//span[@class="minute rc box"]')
+        tt = [t.text_content() for t in tr]
+        tl = [t.replace('\'', '') for t in tt]
+
+        elem = driver.find_element_by_xpath('//*[@id="sub-sub-navigation"]/ul/li[2]/a')
+        elem.click()
+        driver.implicitly_wait(3)
+        html = driver.page_source
+        w = wm(html)
+        r = rd(w)
+        dfr = r[2]
+        tlf = dfr[0].tolist()
+        tl2 = timeline2(tl, tlf)
+        dataf = dd(r, tl2)
+        de(dataf)
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])
+
+
+def mp():
+    dlist = driver.window_handles[1:]
+    for d in dlist:
+        driver.switch_to.window(d)
+        # timeline
+        tree = lxml.html.fromstring(driver.page_source)
+        tr = tree.xpath('//span[@class="minute rc box"]')
+        tt = [t.text_content() for t in tr]
+        tl = [t.replace('\'', '') for t in tt]
+
+        elem = driver.find_element_by_xpath('//*[@id="sub-sub-navigation"]/ul/li[2]/a')
+        elem.click()
+        driver.implicitly_wait(3)
+        html = driver.page_source
+        w = wm(html)
+        r = rd(w)
+        dfr = r[2]
+        tlf = dfr[0].tolist()
+
+        tl2 = timeline2(tl, tlf)
+        dataf = dd(r, tl2)
+        dp(dataf)
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])
+
+
+def cup():
+    driver.switch_to.window(driver.window_handles[1])
+    html = driver.page_source
+    w = wms(html)
+    r = rds(w)
+    driver.close()
+    driver.switch_to.window(driver.window_handles[0])
+    return r
+
+
+def cupe():
+    dlist = driver.window_handles[1:]
+    for d in dlist:
+        driver.switch_to.window(d)
+        html = driver.page_source
+        w = wms(html)
+        r = rds(w)
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])
+        des(r)
+
+
+def cup_a():
+    driver.switch_to.window(driver.window_handles[1])
+    tree = lxml.html.fromstring(driver.page_source)
+    tr = tree.xpath('//span[@class="minute rc box"]')
+    tt = [t.text_content() for t in tr]
+    tl = [t.replace('\'', '') for t in tt]
+
+    elem = driver.find_element_by_xpath('//*[@id="sub-sub-navigation"]/ul/li[2]/a')
+    elem.click()
+    driver.implicitly_wait(3)
+    html = driver.page_source
+    w = wm(html)
+    r = rd(w)
+    dfr = r[2]
+    tlf = dfr[0].tolist()
+    tl2 = timeline2(tl, tlf)
+    dataf = dd(r, tl2)
+    driver.close()
+    driver.switch_to.window(driver.window_handles[0])
+    return dataf
+
+
+def unl_full():
+    unl = input('UNL?')
+    dlist = driver.window_handles[1:]
+    for d in dlist:
+        driver.switch_to.window(d)
+        tree = lxml.html.fromstring(driver.page_source)
+        tr = tree.xpath('//span[@class="minute rc box"]')
+        tt = [t.text_content() for t in tr]
+        tl = [t.replace('\'', '') for t in tt]
+
+        elem = driver.find_element_by_xpath('//*[@id="sub-sub-navigation"]/ul/li[2]/a')
+        elem.click()
+        driver.implicitly_wait(3)
+        html = driver.page_source
+        w = wm(html)
+        r = rd(w)
+        dfr = r[2]
+        tlf = dfr[0].tolist()
+        for ti in range(len(tlf)):
+            if ti > 0:
+                if tlf[ti] == tlf[ti - 1]:
+                    if ti >= len(tl):
+                        tl.insert(ti, tl[ti - 1])
+                    elif tl[ti][:2] != tl[ti - 1][:2]:
+                        tl.insert(ti, tl[ti - 1])
+                    print(tl[ti])
+        if len(tlf) < len(tl):
+            for ti in range(len(tlf)):
+                if tlf[ti] > int(tl[ti].replace(',', '')[:2]):
+                    tl.pop(ti)
+        if len(tl) < len(tlf):
+            for ti in range(len(tlf)):
+                if tlf[ti] < int(tl[ti].replace(',', '')[:2]):
+                    print(tlf[ti])
+                    tl.insert(ti, str(tlf[ti]))
+
+        dataf = dd(r, tl)
+        duc(dataf, unl)
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])
+
+
+def timeline1(tl, tlf):
+    for ti in range(len(tlf)):
+        if ti > 0:
+            if tlf[ti] == tlf[ti - 1]:
+
+                if ti >= len(tl):
+                    tl.insert(ti, tl[ti - 1])
+                else:
+                    tll = tl[ti][:2]
+                    tll2 = tl[ti - 1][:2]
+                    if tll == '91':
+                        tll = '90'
+                    if tll2 == '91':
+                        tll2 = '90'
+                    if tll != tll2:
+                        tl.insert(ti, tl[ti - 1])
+                print(tl[ti])
+    if len(tlf) < len(tl):
+        for ti in range(len(tlf)):
+            if tlf[ti] > int(tl[ti].replace(',', '')[:2]):
+                tl.pop(ti)
+    if len(tlf) < len(tl):
+        for ti in range(len(tlf)):
+            if tlf[ti] > int(tl[ti].replace(',', '')[:2]):
+                tl.pop(ti)
+    if len(tl) < len(tlf):
+        for ti in range(len(tlf)):
+            tll = int(tl[ti].replace(',', '')[:2])
+            if tlf[ti] < tll:
+                tl.insert(ti, str(tlf[ti]))
+                print(tlf[ti])
+
+
+def timeline2(tl, tlf):
+    tl2 = []
+    for t in tlf:
+        i = 0
+        t2 = str(t)
+        while t > int(tl[i].split('+')[0]):
+            i += 1
+            if i >= len(tl):
+                t2 = tl[-1]
+                break
+            t2 = tl[i]
+        tl2.append(t2)
+    return tl2
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

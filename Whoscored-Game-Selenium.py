@@ -33,6 +33,7 @@ des = SF.draft_to_epl_summary
 dps = SF.draft_to_pfl_summary
 dec = SF.draft_to_epl_cup
 dpc = SF.draft_to_pfl_cup
+duc = SF.draft_to_unl_cup
 
 
 # # x = whsc_match(driver.page_source)
@@ -94,37 +95,8 @@ def me():
         r = rd(w)
         dfr = r[2]
         tlf = dfr[0].tolist()
-        for ti in range(len(tlf)):
-            if ti > 0:
-                if tlf[ti] == tlf[ti - 1]:
-
-                    if ti >= len(tl):
-                        tl.insert(ti, tl[ti - 1])
-                    else:
-                        tll = tl[ti][:2]
-                        tll2 = tl[ti - 1][:2]
-                        if tll == '91':
-                            tll = '90'
-                        if tll2 == '91':
-                            tll2 = '90'
-                        if tll != tll2:
-                            tl.insert(ti, tl[ti - 1])
-                    print(tl[ti])
-        if len(tlf) < len(tl):
-            for ti in range(len(tlf)):
-                if tlf[ti] > int(tl[ti].replace(',', '')[:2]):
-                    tl.pop(ti)
-        if len(tlf) < len(tl):
-            for ti in range(len(tlf)):
-                if tlf[ti] > int(tl[ti].replace(',', '')[:2]):
-                    tl.pop(ti)
-        if len(tl) < len(tlf):
-            for ti in range(len(tlf)):
-                tll = int(tl[ti].replace(',', '')[:2])
-                if tlf[ti] < tll:
-                    tl.insert(ti, str(tlf[ti]))
-                    print(tlf[ti])
-        dataf = dd(r, tl)
+        tl2 = timeline2(tl, tlf)
+        dataf = dd(r, tl2)
         de(dataf)
         driver.close()
         driver.switch_to.window(driver.window_handles[0])
@@ -148,37 +120,9 @@ def mp():
         r = rd(w)
         dfr = r[2]
         tlf = dfr[0].tolist()
-        for ti in range(len(tlf)):
-            if ti > 0:
-                if tlf[ti] == tlf[ti - 1]:
 
-                    if ti >= len(tl):
-                        tl.insert(ti, tl[ti - 1])
-                    else:
-                        tll = tl[ti][:2]
-                        tll2 = tl[ti - 1][:2]
-                        if tll == '91':
-                            tll = '90'
-                        if tll2 == '91':
-                            tll2 = '90'
-                        if tll != tll2:
-                            tl.insert(ti, tl[ti - 1])
-                    print(tl[ti])
-        if len(tlf) < len(tl):
-            for ti in range(len(tlf)):
-                if tlf[ti] > int(tl[ti].replace(',', '')[:2]):
-                    tl.pop(ti)
-        if len(tlf) < len(tl):
-            for ti in range(len(tlf)):
-                if tlf[ti] > int(tl[ti].replace(',', '')[:2]):
-                    tl.pop(ti)
-        if len(tl) < len(tlf):
-            for ti in range(len(tlf)):
-                tll = int(tl[ti].replace(',', '')[:2])
-                if tlf[ti] < tll:
-                    tl.insert(ti, str(tlf[ti]))
-                    print(tlf[ti])
-        dataf = dd(r, tl)
+        tl2 = timeline2(tl, tlf)
+        dataf = dd(r, tl2)
         dp(dataf)
         driver.close()
         driver.switch_to.window(driver.window_handles[0])
@@ -221,28 +165,101 @@ def cup_a():
     r = rd(w)
     dfr = r[2]
     tlf = dfr[0].tolist()
+    tl2 = timeline2(tl, tlf)
+    dataf = dd(r, tl2)
+    driver.close()
+    driver.switch_to.window(driver.window_handles[0])
+    return dataf
+
+
+def unl_full():
+    unl = input('UNL?')
+    dlist = driver.window_handles[1:]
+    for d in dlist:
+        driver.switch_to.window(d)
+        tree = lxml.html.fromstring(driver.page_source)
+        tr = tree.xpath('//span[@class="minute rc box"]')
+        tt = [t.text_content() for t in tr]
+        tl = [t.replace('\'', '') for t in tt]
+
+        elem = driver.find_element_by_xpath('//*[@id="sub-sub-navigation"]/ul/li[2]/a')
+        elem.click()
+        driver.implicitly_wait(3)
+        html = driver.page_source
+        w = wm(html)
+        r = rd(w)
+        dfr = r[2]
+        tlf = dfr[0].tolist()
+        for ti in range(len(tlf)):
+            if ti > 0:
+                if tlf[ti] == tlf[ti - 1]:
+                    if ti >= len(tl):
+                        tl.insert(ti, tl[ti - 1])
+                    elif tl[ti][:2] != tl[ti - 1][:2]:
+                        tl.insert(ti, tl[ti - 1])
+                    print(tl[ti])
+        if len(tlf) < len(tl):
+            for ti in range(len(tlf)):
+                if tlf[ti] > int(tl[ti].replace(',', '')[:2]):
+                    tl.pop(ti)
+        if len(tl) < len(tlf):
+            for ti in range(len(tlf)):
+                if tlf[ti] < int(tl[ti].replace(',', '')[:2]):
+                    print(tlf[ti])
+                    tl.insert(ti, str(tlf[ti]))
+
+        dataf = dd(r, tl)
+        duc(dataf, unl)
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])
+
+
+def timeline1(tl, tlf):
     for ti in range(len(tlf)):
         if ti > 0:
             if tlf[ti] == tlf[ti - 1]:
+
                 if ti >= len(tl):
                     tl.insert(ti, tl[ti - 1])
-                elif tl[ti][:2] != tl[ti - 1][:2]:
-                    tl.insert(ti, tl[ti - 1])
+                else:
+                    tll = tl[ti][:2]
+                    tll2 = tl[ti - 1][:2]
+                    if tll == '91':
+                        tll = '90'
+                    if tll2 == '91':
+                        tll2 = '90'
+                    if tll != tll2:
+                        tl.insert(ti, tl[ti - 1])
                 print(tl[ti])
+    if len(tlf) < len(tl):
+        for ti in range(len(tlf)):
+            if tlf[ti] > int(tl[ti].replace(',', '')[:2]):
+                tl.pop(ti)
     if len(tlf) < len(tl):
         for ti in range(len(tlf)):
             if tlf[ti] > int(tl[ti].replace(',', '')[:2]):
                 tl.pop(ti)
     if len(tl) < len(tlf):
         for ti in range(len(tlf)):
-            if tlf[ti] < int(tl[ti].replace(',', '')[:2]):
-                print(tlf[ti])
+            tll = int(tl[ti].replace(',', '')[:2])
+            if tlf[ti] < tll:
                 tl.insert(ti, str(tlf[ti]))
+                print(tlf[ti])
 
-    dataf = dd(r, tl)
-    driver.close()
-    driver.switch_to.window(driver.window_handles[0])
-    return dataf
+
+def timeline2(tl, tlf):
+    tl2 = []
+    for t in tlf:
+        i = 0
+        t2 = str(t)
+        while t > int(tl[i].split('+')[0]):
+            i += 1
+            if i >= len(tl):
+                t2 = tl[-1]
+                break
+            t2 = tl[i]
+        tl2.append(t2)
+    return tl2
 
 
 # url = 'https://www.whoscored.com/Matches/1279505/Live/Portugal-Super-Cup-2017-2018-FC-Porto-Aves'
@@ -250,6 +267,7 @@ def cup_a():
 # url = 'https://www.whoscored.com/Matches/1326684/Live/Europe-UEFA-Europa-League-2018-2019-Rapid-Wien-FC-FCSB'
 # url = 'https://www.whoscored.com/Matches/1279481/Live/England-Community-Shield-2017-2018-Chelsea-Manchester-City'
 # url = 'https://www.whoscored.com/Regions/252/Tournaments/2/Seasons/7361/England-Premier-League'
+# url = 'https://www.whoscored.com/Regions/247/Tournaments/683/International-UEFA-Nations-League-A'
 url = 'https://www.whoscored.com/Regions/252/Tournaments/2/Seasons/7361/England-Premier-League'
 driver.get(url)
 driver.implicitly_wait(3)
