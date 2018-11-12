@@ -197,19 +197,65 @@ class Sele(object):
 
         driver.quit()
 
+    # 181122,读取页面太慢会导致信息不全，目前采用检查长度，如果信息不全就隔2秒重新读一遍网页
+    def check_html(self, driver):
+        yy = []
+        times = 0
+        while len(yy) < 1:
+        # while times < 4:
+            if times != 0:
+                print('Retrying')
+                time.sleep(2)
+            times += 1
+            yy = []
+            html = driver.page_source
+            tree = lxml.html.fromstring(html)
+            bs = BeautifulSoup(html, 'html.parser')
+            x = bs.find_all('script', type="text/javascript")
+            for xxx in x:
+                if 30000 > len(xxx.text) > 8000:
+                    yy.append(xxx)
+            # 181122 目前用长度定位，留下格式信息备用
+            # print(len(yy))
+            # print([len(xxx.text) for xxx in yy])
+            # print([z.text[:100] for z in yy])
+            # [5266, 57363, 10895]
+            # [5266, 57345, 11283]
+            # ["\n    var matchStats = [[[167,32,'Manchester City','Manchester United','11/11/2018 16:30:00','11/11/2"]
+
+        return html
+
     def whsc_match(self, htmltext):
         tree = lxml.html.fromstring(htmltext)
         bs = BeautifulSoup(htmltext, 'html.parser')
         x = bs.find_all('script', type="text/javascript")
         yy = []
+        # 181112 经过观察，目标字段长度在10000-12000之间，缩小范围以精确定位
         for xxx in x:
-            if len(xxx.text) > 5000:
+            if 30000 > len(xxx.text) > 8000:
+            # if len(xxx.text) > 5000:
                 yy.append(xxx)
-        y = yy[1].text
+        y = yy[0].text
         z = y.split(';')[0][23:]
         u = z.replace('\'', '"').replace(',,', ',null,').replace(',,', ',null,').replace(',]', ',null]')
         uu = ']'.join(u.split(']')[:-2]) + ']'
         v = json.loads(uu)
+        # # 181022 似乎多了一行，y定位从1改到-1
+        # try:
+        #     print(1)
+        #     y = yy[-1].text
+        #     z = y.split(';')[0][23:]
+        #     u = z.replace('\'', '"').replace(',,', ',null,').replace(',,', ',null,').replace(',]', ',null]')
+        #     uu = ']'.join(u.split(']')[:-2]) + ']'
+        #     v = json.loads(uu)
+        # except:
+        #     print(2)
+        #     y = yy[1].text
+        #     z = y.split(';')[0][23:]
+        #     u = z.replace('\'', '"').replace(',,', ',null,').replace(',,', ',null,').replace(',]', ',null]')
+        #     uu = ']'.join(u.split(']')[:-2]) + ']'
+        #     v = json.loads(uu)
+
         tr = tree.xpath('//*[@id="breadcrumb-nav"]/a')[0].text.replace('\r\n', '').strip()
         return v, tr
 
@@ -1006,6 +1052,7 @@ class Sele(object):
         # psd = df[['Whoscored', 'PS']].set_index('Whoscored').to_dict()['PS']
         wsc_ps_dic = {'Aves': 'Desportivo_Aves',
      'Belenenses': 'Belenenses',
+     'Belenenses SAD': 'Belenenses',
      'Benfica': 'Benfica',
      'Boavista': 'Boavista',
      'Braga': 'Braga',
@@ -1024,6 +1071,7 @@ class Sele(object):
      'Vitoria de Setubal': 'Vitória_Setúbal'}
         wsc_game_dic = {'Aves': 'Desportivo Aves',
      'Belenenses': 'Belenenses',
+     'Belenenses SAD': 'Belenenses',
      'Benfica': 'Benfica',
      'Boavista': 'Boavista',
      'Braga': 'Sporting Braga',

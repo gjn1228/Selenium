@@ -90,7 +90,8 @@ def me():
         elem = driver.find_element_by_xpath('//*[@id="sub-sub-navigation"]/ul/li[2]/a')
         elem.click()
         driver.implicitly_wait(3)
-        html = driver.page_source
+        # html = driver.page_source
+        html = SF.check_html(driver)
         w = wm(html)
         r = rd(w)
         dfr = r[2]
@@ -115,7 +116,7 @@ def mp():
         elem = driver.find_element_by_xpath('//*[@id="sub-sub-navigation"]/ul/li[2]/a')
         elem.click()
         driver.implicitly_wait(3)
-        html = driver.page_source
+        html = SF.check_html(driver)
         w = wm(html)
         r = rd(w)
         dfr = r[2]
@@ -160,7 +161,8 @@ def cup_a():
     elem = driver.find_element_by_xpath('//*[@id="sub-sub-navigation"]/ul/li[2]/a')
     elem.click()
     driver.implicitly_wait(3)
-    html = driver.page_source
+    time.sleep(3)
+    html = SF.check_html(driver)
     w = wm(html)
     r = rd(w)
     dfr = r[2]
@@ -185,7 +187,7 @@ def unl_full():
         elem = driver.find_element_by_xpath('//*[@id="sub-sub-navigation"]/ul/li[2]/a')
         elem.click()
         driver.implicitly_wait(3)
-        html = driver.page_source
+        html = SF.check_html(driver)
         w = wm(html)
         r = rd(w)
         dfr = r[2]

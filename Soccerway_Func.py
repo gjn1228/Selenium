@@ -1414,9 +1414,13 @@ class Socc(object):
 
         if 'Age' in player_dt_t:
             player_age = player_dd_t[player_dt_t.index('Age')]
+        else:
+            player_age = ''
         pos_dic = {'Goalkeeper': 'GK', 'Defender': 'D', 'Midfielder': 'M', 'Attacker': 'A'}
         if 'Position' in player_dt_t:
             player_pos = pos_dic[player_dd_t[player_dt_t.index('Position')]]
+        else:
+            player_pos = ''
         return [player_pos, player_age]
 
     def soccerway_input(self, st, ha, ang, t):
