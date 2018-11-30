@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09926ea5-0ba3-4fdf-b2a9-b78671f39c27" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/SBO-mkt.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/Selenium.iml" afterPath="$PROJECT_DIR$/.idea/Selenium.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/SBO-mkt.py" afterPath="$PROJECT_DIR$/SBO-mkt.py" />
       <change beforePath="$PROJECT_DIR$/Selenium_Func.py" afterPath="$PROJECT_DIR$/Selenium_Func.py" />
       <change beforePath="$PROJECT_DIR$/Soccerway_Func.py" afterPath="$PROJECT_DIR$/Soccerway_Func.py" />
-      <change beforePath="$PROJECT_DIR$/Whoscored-Game-Selenium.py" afterPath="$PROJECT_DIR$/Whoscored-Game-Selenium.py" />
       <change beforePath="$PROJECT_DIR$/Whoscored_PS_UI.py" afterPath="$PROJECT_DIR$/Whoscored_PS_UI.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +28,7 @@
     <SUITE FILE_PATH="coverage/Selenium$EPL_Selenium.coverage" NAME="EPL-Selenium Coverage Results" MODIFIED="1533886400499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Selenium$run.coverage" NAME="run Coverage Results" MODIFIED="1536560645359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exe/flask/tcm" />
     <SUITE FILE_PATH="coverage/Selenium$SBO_mkt.coverage" NAME="SBO-mkt Coverage Results" MODIFIED="1538230674195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Selenium$Whoscored_PS_UI.coverage" NAME="Whoscored_PS_UI Coverage Results" MODIFIED="1542026046151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Selenium$Whoscored_PS_UI.coverage" NAME="Whoscored_PS_UI Coverage Results" MODIFIED="1543469996393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Selenium$Whoscored_Selenium.coverage" NAME="Whoscored-Selenium Coverage Results" MODIFIED="1533885959794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Selenium$Selenium_Func.coverage" NAME="Selenium_Func Coverage Results" MODIFIED="1535521839884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Selenium$Whoscored_Game_Selenium.coverage" NAME="Whoscored-Game-Selenium Coverage Results" MODIFIED="1535875956802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -54,22 +55,106 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Selenium_Func.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Selenium_Func.py">
+      <file leaf-file-name="SBO-mkt.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SBO-mkt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="1915" selection-end-column="33" />
+            <state relative-caret-position="943">
+              <caret line="456" column="0" lean-forward="false" selection-start-line="456" selection-start-column="0" selection-end-line="456" selection-end-column="0" />
               <folding>
-                <element signature="e#375#77244#0" expanded="false" />
-                <element signature="e#2020#8544#0" expanded="false" />
-                <element signature="e#8642#9540#0" expanded="false" />
-                <element signature="e#9176#9201#0" expanded="false" />
-                <element signature="e#9837#9939#0" expanded="false" />
-                <element signature="e#10183#10210#0" expanded="false" />
-                <element signature="e#38990#41098#0" expanded="false" />
-                <element signature="e#39194#39828#0" expanded="false" />
-                <element signature="e#39852#40500#0" expanded="false" />
-                <element signature="e#41139#43258#0" expanded="false" />
+                <element signature="e#32#62#0" expanded="true" />
+                <element signature="e#607#3849#0" expanded="false" />
+                <element signature="e#660#1560#0" expanded="false" />
+                <element signature="e#1630#2637#0" expanded="false" />
+                <element signature="e#2437#2637#0" expanded="false" />
+                <element signature="e#2675#3680#0" expanded="false" />
+                <element signature="e#3869#3906#0" expanded="false" />
+                <element signature="e#4004#4949#0" expanded="false" />
+                <element signature="e#4641#4662#0" expanded="false" />
+                <element signature="e#4970#6245#0" expanded="false" />
+                <element signature="e#5085#5147#0" expanded="false" />
+                <element signature="e#5514#5628#0" expanded="false" />
+                <element signature="e#6266#9788#0" expanded="false" />
+                <element signature="e#6381#6443#0" expanded="false" />
+                <element signature="e#6718#7666#0" expanded="false" />
+                <element signature="e#7834#7948#0" expanded="false" />
+                <element signature="e#8048#8538#0" expanded="false" />
+                <element signature="e#8158#8538#0" expanded="false" />
+                <element signature="e#9818#13030#0" expanded="false" />
+                <element signature="e#9943#11630#0" expanded="false" />
+                <element signature="e#10010#10113#0" expanded="false" />
+                <element signature="e#10175#11286#0" expanded="false" />
+                <element signature="e#10345#10540#0" expanded="false" />
+                <element signature="e#10657#11263#0" expanded="false" />
+                <element signature="e#11346#11468#0" expanded="false" />
+                <element signature="e#11695#12299#0" expanded="false" />
+                <element signature="e#12370#12943#0" expanded="false" />
+                <element signature="e#13050#14056#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Soccerway.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Soccerway.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Whoscored_PS_UI.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Whoscored_PS_UI.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="1091" column="91" lean-forward="false" selection-start-line="1091" selection-start-column="91" selection-end-line="1091" selection-end-column="91" />
+              <folding>
+                <element signature="e#339#5632#0" expanded="false" />
+                <element signature="e#378#4538#0" expanded="false" />
+                <element signature="e#4589#5284#0" expanded="false" />
+                <element signature="e#5385#5402#0" expanded="false" />
+                <element signature="e#5723#7259#0" expanded="false" />
+                <element signature="e#7305#13829#0" expanded="false" />
+                <element signature="e#13927#14825#0" expanded="false" />
+                <element signature="e#14461#14486#0" expanded="false" />
+                <element signature="e#14871#16218#0" expanded="false" />
+                <element signature="e#15122#15224#0" expanded="false" />
+                <element signature="e#15468#15495#0" expanded="false" />
+                <element signature="e#16272#16864#0" expanded="false" />
+                <element signature="e#16911#24730#0" expanded="false" />
+                <element signature="e#24766#26145#0" expanded="false" />
+                <element signature="e#26185#34937#0" expanded="false" />
+                <element signature="e#32581#32763#0" expanded="false" />
+                <element signature="e#35046#44384#0" expanded="false" />
+                <element signature="e#41897#42079#0" expanded="false" />
+                <element signature="e#44425#46565#0" expanded="false" />
+                <element signature="e#44629#45263#0" expanded="false" />
+                <element signature="e#45287#45935#0" expanded="false" />
+                <element signature="e#46606#48725#0" expanded="false" />
+                <element signature="e#48765#54040#0" expanded="false" />
+                <element signature="e#54089#60105#0" expanded="false" />
+                <element signature="e#60186#65883#0" expanded="false" />
+                <element signature="e#60186#60221#0" expanded="false" />
+                <element signature="e#60390#61024#0" expanded="false" />
+                <element signature="e#61048#61696#0" expanded="false" />
+                <element signature="e#65928#68219#0" expanded="false" />
+                <element signature="e#65928#65963#0" expanded="false" />
+                <element signature="e#66132#66766#0" expanded="false" />
+                <element signature="e#66790#67438#0" expanded="false" />
+                <element signature="e#68269#70881#0" expanded="false" />
+                <element signature="e#70926#73123#0" expanded="false" />
+                <element signature="e#73211#76380#0" expanded="false" />
+                <element signature="e#76473#79647#0" expanded="false" />
+                <element signature="e#79735#83274#0" expanded="false" />
+                <element signature="e#83821#84597#0" expanded="false" />
+                <element signature="e#84614#85355#0" expanded="false" />
+                <element signature="e#85373#85571#0" expanded="false" />
+                <element signature="e#85869#86504#0" expanded="false" />
+                <element signature="e#86527#87953#0" expanded="false" />
+                <element signature="e#87984#89024#0" expanded="false" />
+                <element signature="e#89055#89318#0" expanded="false" />
+                <element signature="e#89352#89546#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -78,8 +163,8 @@
       <file leaf-file-name="Whoscored-Game-Selenium.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Whoscored-Game-Selenium.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="263" selection-end-column="14" />
+            <state relative-caret-position="368">
+              <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
               <folding>
                 <element signature="e#949#987#0" expanded="false" />
                 <element signature="e#2909#3685#0" expanded="false" />
@@ -95,34 +180,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Whoscored_PS_UI.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Whoscored_PS_UI.py">
+      <file leaf-file-name="Soccerway_Func.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Soccerway_Func.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="2043" column="0" lean-forward="true" selection-start-line="2043" selection-start-column="0" selection-end-line="2043" selection-end-column="0" />
+            <state relative-caret-position="7544">
+              <caret line="341" column="50" lean-forward="false" selection-start-line="341" selection-start-column="50" selection-end-line="341" selection-end-column="50" />
               <folding>
-                <element signature="e#32#62#0" expanded="true" />
-                <element signature="e#339#5632#0" expanded="false" />
-                <element signature="e#378#4538#0" expanded="false" />
-                <element signature="e#4589#5284#0" expanded="false" />
-                <element signature="e#5385#5402#0" expanded="false" />
-                <element signature="e#5660#82529#0" expanded="false" />
-                <element signature="e#7305#13829#0" expanded="false" />
-                <element signature="e#13927#14825#0" expanded="false" />
-                <element signature="e#14461#14486#0" expanded="false" />
-                <element signature="e#15122#15224#0" expanded="false" />
-                <element signature="e#15468#15495#0" expanded="false" />
-                <element signature="e#44275#46383#0" expanded="false" />
-                <element signature="e#44479#45113#0" expanded="false" />
-                <element signature="e#45137#45785#0" expanded="false" />
-                <element signature="e#46424#48543#0" expanded="false" />
-                <element signature="e#83076#83852#0" expanded="false" />
-                <element signature="e#83869#84610#0" expanded="false" />
-                <element signature="e#84628#84826#0" expanded="false" />
-                <element signature="e#84845#85104#0" expanded="false" />
-                <element signature="e#85782#87208#0" expanded="false" />
-                <element signature="e#87239#88279#0" expanded="false" />
-                <element signature="e#88310#88573#0" expanded="false" />
+                <element signature="e#15314#15344#0" expanded="false" />
+                <element signature="e#19830#58610#0" expanded="false" />
+                <element signature="e#58655#61290#0" expanded="false" />
+                <element signature="e#63093#64246#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -139,15 +206,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>OG</find>
-      <find>goal += 1</find>
-      <find>hal[2][0]</find>
-      <find>hog</find>
-      <find>og = hal</find>
-      <find>player</find>
-      <find>sub[3]</find>
-      <find>getsoccerway</find>
-      <find>json</find>
       <find>og</find>
       <find>st.range((row, 29), (row, 80)).value = result</find>
       <find>error</find>
@@ -167,8 +225,17 @@
       <find>wm</find>
       <find>html</find>
       <find>html = driver.page_source</find>
-      <find>html = driver.page_source</find>
       <find>wms</find>
+      <find>admin</find>
+      <find>print</find>
+      <find>not fo</find>
+      <find>shot</find>
+      <find>shotcolumn</find>
+      <find>80</find>
+      <find>A</find>
+      <find>Assi</find>
+      <find>assist</find>
+      <find>助攻</find>
     </findStrings>
     <replaceStrings>
       <replace>gdic</replace>
@@ -178,6 +245,9 @@
       <replace>comment</replace>
       <replace>self.selfname</replace>
       <replace>html = SF.check_html(driver)</replace>
+      <replace>shotcolumn</replace>
+      <replace>playercolumn</replace>
+      <replace>100</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -204,11 +274,13 @@
         <option value="$PROJECT_DIR$/EPL-Selenium.py" />
         <option value="$PROJECT_DIR$/../exe/flask/tcm/tcm/models.py" />
         <option value="$PROJECT_DIR$/Soccerway.py" />
-        <option value="$PROJECT_DIR$/SBO-mkt.py" />
-        <option value="$PROJECT_DIR$/Soccerway_Func.py" />
-        <option value="$PROJECT_DIR$/Selenium_Func.py" />
         <option value="$PROJECT_DIR$/Whoscored-Game-Selenium.py" />
+        <option value="$PROJECT_DIR$/../soccerwayV2/InputForm.py" />
+        <option value="$PROJECT_DIR$/../excel/OA_read.py" />
+        <option value="$PROJECT_DIR$/SBO-mkt.py" />
+        <option value="$PROJECT_DIR$/Selenium_Func.py" />
         <option value="$PROJECT_DIR$/Whoscored_PS_UI.py" />
+        <option value="$PROJECT_DIR$/Soccerway_Func.py" />
       </list>
     </option>
   </component>
@@ -242,7 +314,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,11 +325,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Rating" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistoryKey" value="except&#9;null&#9;null" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="JavaScript" />
@@ -276,7 +348,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Whoscored_PS_UI">
+  <component name="RunManager" selected="Python.Soccerway">
     <configuration name="SBO-mkt" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -381,9 +453,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Whoscored_PS_UI" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Soccerway" />
         <item index="1" class="java.lang.String" itemvalue="Python.Whoscored-Game-Selenium" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Soccerway" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Whoscored_PS_UI" />
         <item index="3" class="java.lang.String" itemvalue="Python.SBO-mkt" />
         <item index="4" class="java.lang.String" itemvalue="Python.Soccerway_Func" />
       </list>
@@ -413,17 +485,16 @@
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17864807" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30672747" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30672747" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1722103" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4415236" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4254292" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990878" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -431,6 +502,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -474,25 +546,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="50" />
+      <option name="time" value="52" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Whoscored-Selenium.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../soccerwayV2/test3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test 1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -777,81 +835,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Soccerway_Func.py">
+    <entry file="file://$PROJECT_DIR$/../soccerwayV2/InputForm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1219">
-          <caret line="1421" column="13" lean-forward="false" selection-start-line="1421" selection-start-column="13" selection-end-line="1421" selection-end-column="13" />
+        <state relative-caret-position="115">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Whoscored-Selenium.py">
+    <entry file="file://$PROJECT_DIR$/../excel/OA_read.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="802">
-          <caret line="453" column="0" lean-forward="false" selection-start-line="453" selection-start-column="0" selection-end-line="455" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Soccerway.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="e#33#53#0" expanded="false" />
-            <element signature="e#668#702#0" expanded="false" />
-            <element signature="e#723#942#0" expanded="false" />
-            <element signature="e#964#1009#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="160">
+          <caret line="76" column="27" lean-forward="true" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SBO-mkt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="225" column="13" lean-forward="false" selection-start-line="225" selection-start-column="13" selection-end-line="225" selection-end-column="13" />
+        <state relative-caret-position="943">
+          <caret line="456" column="0" lean-forward="false" selection-start-line="456" selection-start-column="0" selection-end-line="456" selection-end-column="0" />
           <folding>
-            <element signature="e#32#62#0" expanded="false" />
-            <element signature="e#474#3716#0" expanded="false" />
-            <element signature="e#527#1427#0" expanded="false" />
-            <element signature="e#1497#2504#0" expanded="false" />
-            <element signature="e#2304#2504#0" expanded="false" />
-            <element signature="e#2542#3547#0" expanded="false" />
-            <element signature="e#3736#3773#0" expanded="false" />
-            <element signature="e#3871#4816#0" expanded="false" />
-            <element signature="e#4508#4529#0" expanded="false" />
-            <element signature="e#4837#6112#0" expanded="false" />
-            <element signature="e#4952#5014#0" expanded="false" />
-            <element signature="e#5381#5495#0" expanded="false" />
-            <element signature="e#5595#6057#0" expanded="false" />
-            <element signature="e#6133#7610#0" expanded="false" />
-            <element signature="e#6248#6310#0" expanded="false" />
-            <element signature="e#6879#6993#0" expanded="false" />
+            <element signature="e#32#62#0" expanded="true" />
+            <element signature="e#607#3849#0" expanded="false" />
+            <element signature="e#660#1560#0" expanded="false" />
+            <element signature="e#1630#2637#0" expanded="false" />
+            <element signature="e#2437#2637#0" expanded="false" />
+            <element signature="e#2675#3680#0" expanded="false" />
+            <element signature="e#3869#3906#0" expanded="false" />
+            <element signature="e#4004#4949#0" expanded="false" />
+            <element signature="e#4641#4662#0" expanded="false" />
+            <element signature="e#4970#6245#0" expanded="false" />
+            <element signature="e#5085#5147#0" expanded="false" />
+            <element signature="e#5514#5628#0" expanded="false" />
+            <element signature="e#6266#9788#0" expanded="false" />
+            <element signature="e#6381#6443#0" expanded="false" />
+            <element signature="e#6718#7666#0" expanded="false" />
+            <element signature="e#7834#7948#0" expanded="false" />
+            <element signature="e#8048#8538#0" expanded="false" />
+            <element signature="e#8158#8538#0" expanded="false" />
+            <element signature="e#9818#13030#0" expanded="false" />
+            <element signature="e#9943#11630#0" expanded="false" />
+            <element signature="e#10010#10113#0" expanded="false" />
+            <element signature="e#10175#11286#0" expanded="false" />
+            <element signature="e#10345#10540#0" expanded="false" />
+            <element signature="e#10657#11263#0" expanded="false" />
+            <element signature="e#11346#11468#0" expanded="false" />
+            <element signature="e#11695#12299#0" expanded="false" />
+            <element signature="e#12370#12943#0" expanded="false" />
+            <element signature="e#13050#14056#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Whoscored-Selenium.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7056">
+          <caret line="453" column="0" lean-forward="false" selection-start-line="453" selection-start-column="0" selection-end-line="455" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Whoscored_PS_UI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="1091" column="91" lean-forward="false" selection-start-line="1091" selection-start-column="91" selection-end-line="1091" selection-end-column="91" />
+          <folding>
+            <element signature="e#339#5632#0" expanded="false" />
+            <element signature="e#378#4538#0" expanded="false" />
+            <element signature="e#4589#5284#0" expanded="false" />
+            <element signature="e#5385#5402#0" expanded="false" />
+            <element signature="e#5723#7259#0" expanded="false" />
+            <element signature="e#7305#13829#0" expanded="false" />
+            <element signature="e#13927#14825#0" expanded="false" />
+            <element signature="e#14461#14486#0" expanded="false" />
+            <element signature="e#14871#16218#0" expanded="false" />
+            <element signature="e#15122#15224#0" expanded="false" />
+            <element signature="e#15468#15495#0" expanded="false" />
+            <element signature="e#16272#16864#0" expanded="false" />
+            <element signature="e#16911#24730#0" expanded="false" />
+            <element signature="e#24766#26145#0" expanded="false" />
+            <element signature="e#26185#34937#0" expanded="false" />
+            <element signature="e#32581#32763#0" expanded="false" />
+            <element signature="e#35046#44384#0" expanded="false" />
+            <element signature="e#41897#42079#0" expanded="false" />
+            <element signature="e#44425#46565#0" expanded="false" />
+            <element signature="e#44629#45263#0" expanded="false" />
+            <element signature="e#45287#45935#0" expanded="false" />
+            <element signature="e#46606#48725#0" expanded="false" />
+            <element signature="e#48765#54040#0" expanded="false" />
+            <element signature="e#54089#60105#0" expanded="false" />
+            <element signature="e#60186#65883#0" expanded="false" />
+            <element signature="e#60186#60221#0" expanded="false" />
+            <element signature="e#60390#61024#0" expanded="false" />
+            <element signature="e#61048#61696#0" expanded="false" />
+            <element signature="e#65928#68219#0" expanded="false" />
+            <element signature="e#65928#65963#0" expanded="false" />
+            <element signature="e#66132#66766#0" expanded="false" />
+            <element signature="e#66790#67438#0" expanded="false" />
+            <element signature="e#68269#70881#0" expanded="false" />
+            <element signature="e#70926#73123#0" expanded="false" />
+            <element signature="e#73211#76380#0" expanded="false" />
+            <element signature="e#76473#79647#0" expanded="false" />
+            <element signature="e#79735#83274#0" expanded="false" />
+            <element signature="e#83821#84597#0" expanded="false" />
+            <element signature="e#84614#85355#0" expanded="false" />
+            <element signature="e#85373#85571#0" expanded="false" />
+            <element signature="e#85869#86504#0" expanded="false" />
+            <element signature="e#86527#87953#0" expanded="false" />
+            <element signature="e#87984#89024#0" expanded="false" />
+            <element signature="e#89055#89318#0" expanded="false" />
+            <element signature="e#89352#89546#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Selenium_Func.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="1915" selection-end-column="33" />
-          <folding>
-            <element signature="e#375#77244#0" expanded="false" />
-            <element signature="e#2020#8544#0" expanded="false" />
-            <element signature="e#8642#9540#0" expanded="false" />
-            <element signature="e#9176#9201#0" expanded="false" />
-            <element signature="e#9837#9939#0" expanded="false" />
-            <element signature="e#10183#10210#0" expanded="false" />
-            <element signature="e#38990#41098#0" expanded="false" />
-            <element signature="e#39194#39828#0" expanded="false" />
-            <element signature="e#39852#40500#0" expanded="false" />
-            <element signature="e#41139#43258#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="368">
+          <caret line="746" column="4" lean-forward="false" selection-start-line="746" selection-start-column="4" selection-end-line="746" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Whoscored-Game-Selenium.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="263" selection-end-column="14" />
+        <state relative-caret-position="368">
+          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
           <folding>
             <element signature="e#949#987#0" expanded="false" />
             <element signature="e#2909#3685#0" expanded="false" />
@@ -866,34 +972,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Whoscored_PS_UI.py">
+    <entry file="file://$PROJECT_DIR$/Soccerway_Func.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="2043" column="0" lean-forward="true" selection-start-line="2043" selection-start-column="0" selection-end-line="2043" selection-end-column="0" />
+        <state relative-caret-position="7544">
+          <caret line="341" column="50" lean-forward="false" selection-start-line="341" selection-start-column="50" selection-end-line="341" selection-end-column="50" />
           <folding>
-            <element signature="e#32#62#0" expanded="true" />
-            <element signature="e#339#5632#0" expanded="false" />
-            <element signature="e#378#4538#0" expanded="false" />
-            <element signature="e#4589#5284#0" expanded="false" />
-            <element signature="e#5385#5402#0" expanded="false" />
-            <element signature="e#5660#82529#0" expanded="false" />
-            <element signature="e#7305#13829#0" expanded="false" />
-            <element signature="e#13927#14825#0" expanded="false" />
-            <element signature="e#14461#14486#0" expanded="false" />
-            <element signature="e#15122#15224#0" expanded="false" />
-            <element signature="e#15468#15495#0" expanded="false" />
-            <element signature="e#44275#46383#0" expanded="false" />
-            <element signature="e#44479#45113#0" expanded="false" />
-            <element signature="e#45137#45785#0" expanded="false" />
-            <element signature="e#46424#48543#0" expanded="false" />
-            <element signature="e#83076#83852#0" expanded="false" />
-            <element signature="e#83869#84610#0" expanded="false" />
-            <element signature="e#84628#84826#0" expanded="false" />
-            <element signature="e#84845#85104#0" expanded="false" />
-            <element signature="e#85782#87208#0" expanded="false" />
-            <element signature="e#87239#88279#0" expanded="false" />
-            <element signature="e#88310#88573#0" expanded="false" />
+            <element signature="e#15314#15344#0" expanded="false" />
+            <element signature="e#19830#58610#0" expanded="false" />
+            <element signature="e#58655#61290#0" expanded="false" />
+            <element signature="e#63093#64246#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Soccerway.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>

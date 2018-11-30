@@ -791,8 +791,9 @@ class Sele(object):
 
                 if 'goal_assist' in pdic:
                     xs.append('A')
-                    if pdic['goal_assist'] > 1:
-                        xs.append(str(pdic['goal_assist']))
+                    xs.append(str(pdic['goal_assist']))
+                    # if pdic['goal_assist'] > 1:
+                    #     xs.append(str(pdic['goal_assist']))
 
                 if 'yellow_card' in pdic:
                     font[2] = 'yellow'
@@ -848,6 +849,7 @@ class Sele(object):
                 [[[ascore, aco, acolor], [hscore, hco, hcolor]], awayshot, [ap, pid]]]
 
     # 180903调整og顺序， 180923客队红牌人数
+    # 181129 一次助攻写法从‘A’变成了‘A1’
     def df_to_draft2(self, x, tl):
         hteam = x[1]['hteam']
         ateam = x[1]['ateam']
@@ -1027,9 +1029,9 @@ class Sele(object):
 
                 if 'goal_assist' in pdic:
                     xs.append('A')
-                    if pdic['goal_assist'] > 1:
-                        xs.append(str(pdic['goal_assist']))
-
+                    xs.append(str(pdic['goal_assist']))
+                    # if pdic['goal_assist'] > 1:
+                    #     xs.append(str(pdic['goal_assist']))
 
                 if 'yellow_card' in pdic:
                     font[2] = 'yellow'
@@ -1148,7 +1150,7 @@ class Sele(object):
                             row = game.index(g) + 10
             hal = x[at.index(ha) + 1]
 
-            self.to_sheet_all(st, row, hal, ha)
+            self.to_sheet_all(st, row, hal, ha, playercolumn=31, shotcolumn=21)
 
     def draft_to_pfl(self, x):
         # path = r'E:\Company\League\EPL\\'
@@ -1473,7 +1475,7 @@ class Sele(object):
             else:
                 print(ha, ' not in PS')
 
-    def draft_to_epl_summary(self, x):
+    def draft_to_epl_summary(self, x, playercolumn=31, shotcolumn=21):
         # path = r'E:\Company\League\EPL\\'
         # df = pd.read_excel(path + 'team name.xlsx')
         # psd = df[['Whoscored', 'Soccerway']].set_index('Whoscored').to_dict()['Soccerway']
@@ -1532,11 +1534,11 @@ class Sele(object):
                 game = st.range((10, 1), (80, 4)).value
                 row = self.row_determine(date, game, awayteam, ha, at)
 
-                plist = st.range((8, 29), (8, 80)).value
-                nlist = st.range((6, 29), (6, 80)).value
-                result = st.range((row, 29), (row, 80)).value
-                st.range((row, 29), (row, 80)).api.Font.Bold = False
-                st.range((row, 29), (row, 80)).api.Font.ColorIndex = 1
+                plist = st.range((8, playercolumn), (8, 100)).value
+                nlist = st.range((6, playercolumn), (6, 100)).value
+                result = st.range((row, playercolumn), (row, 100)).value
+                st.range((row, playercolumn), (row, 100)).api.Font.Bold = False
+                st.range((row, playercolumn), (row, 100)).api.Font.ColorIndex = 1
                 hal = x[at.index(ha) + 1]
                 home = hal[0][0]
                 away = hal[0][1]
@@ -1571,7 +1573,7 @@ class Sele(object):
                         print(ha, '-', name, 'error')
                     else:
                         result[ind] = ''.join(data[1])
-                        col = ind + 29
+                        col = ind + playercolumn
                         if data[2][0] == 'Bold':
                             st.range(row, col).api.Font.Bold = True
                         if data[2][1] == 'red':
@@ -1591,10 +1593,10 @@ class Sele(object):
                                 st.range(row, col).api.Comment.Text('\n'.join(data[3]))
                             st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
                             st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
-                st.range((row, 29), (row, 80)).value = result
+                st.range((row, playercolumn), (row, 100)).value = result
                 og = hal[2]
                 if og > 0:
-                    st.range(row, plist.index('OG') + 29).value = og
+                    st.range(row, plist.index('OG') + playercolumn).value = og
                 print('%s Finished' % ha)
 
             else:
@@ -1660,7 +1662,7 @@ class Sele(object):
                 row = self.row_determine(date, game, awayteam, ha, at)
                 hal = x[at.index(ha) + 1]
 
-                self.to_sheet_all(st, row, hal, ha)
+                self.to_sheet_all(st, row, hal, ha, playercolumn=31, shotcolumn=21)
 
             else:
                 print(ha, ' not in PS')
@@ -1797,12 +1799,12 @@ class Sele(object):
             else:
                 print(ha, ' not in PS')
 
-    def to_sheet_all(self, st, row, hal, ha):
-        plist = st.range((8, 29), (8, 80)).value
-        nlist = st.range((6, 29), (6, 80)).value
-        result = st.range((row, 29), (row, 80)).value
-        st.range((row, 29), (row, 80)).api.Font.Bold = False
-        st.range((row, 29), (row, 80)).api.Font.ColorIndex = 1
+    def to_sheet_all(self, st, row, hal, ha, playercolumn=29, shotcolumn=19):
+        plist = st.range((8, playercolumn), (8, 100)).value
+        nlist = st.range((6, playercolumn), (6, 100)).value
+        result = st.range((row, playercolumn), (row, 100)).value
+        st.range((row, playercolumn), (row, 100)).api.Font.Bold = False
+        st.range((row, playercolumn), (row, 100)).api.Font.ColorIndex = 1
 
         home = hal[0][0]
         away = hal[0][1]
@@ -1827,7 +1829,7 @@ class Sele(object):
         if away[2] == ['red']:
             st.range(row, 6).api.Interior.Color = 255
 
-        st.range((row, 19), (row, 25)).value = hal[1]
+        st.range((row, shotcolumn), (row, shotcolumn + 6)).value = hal[1]
 
         for name in hal[2][0]:
             ind = 0
@@ -1841,7 +1843,7 @@ class Sele(object):
                 print(ha, '-', name, 'error')
             else:
                 result[ind] = ''.join(data[1])
-                col = ind + 29
+                col = ind + playercolumn
                 if data[2][0] == 'Bold':
                     st.range(row, col).api.Font.Bold = True
                 if data[2][1] == 'red':
@@ -1861,18 +1863,18 @@ class Sele(object):
                         st.range(row, col).api.Comment.Text('\n'.join(data[3]))
                     st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
                     st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
-        st.range((row, 29), (row, 80)).value = result
+        st.range((row, playercolumn), (row, 100)).value = result
         og = hal[3]
         if og > 0:
-            st.range(row, plist.index('OG') + 29).value = og
+            st.range(row, plist.index('OG') + playercolumn).value = og
         print('%s Finished' % ha)
 
-    def to_sheet_nonumber(self, st, row, hal, ha):
-        plist = st.range((8, 29), (8, 80)).value
-        # nlist = st.range((6, 29), (6, 80)).value
-        result = st.range((row, 29), (row, 80)).value
-        st.range((row, 29), (row, 80)).api.Font.Bold = False
-        st.range((row, 29), (row, 80)).api.Font.ColorIndex = 1
+    def to_sheet_nonumber(self, st, row, hal, ha, playercolumn=29, shotcolumn=19):
+        plist = st.range((8, playercolumn), (8, 100)).value
+        # nlist = st.range((6, playercolumn), (6, 80)).value
+        result = st.range((row, playercolumn), (row, 100)).value
+        st.range((row, playercolumn), (row, 100)).api.Font.Bold = False
+        st.range((row, playercolumn), (row, 100)).api.Font.ColorIndex = 1
 
         home = hal[0][0]
         away = hal[0][1]
@@ -1897,7 +1899,7 @@ class Sele(object):
         if away[2] == ['red']:
             st.range(row, 6).api.Interior.Color = 255
 
-        st.range((row, 19), (row, 25)).value = hal[1]
+        st.range((row, shotcolumn), (row, shotcolumn + 6)).value = hal[1]
 
         for name in hal[2][0]:
             ind = 0
@@ -1911,7 +1913,7 @@ class Sele(object):
                 print(ha, '-', name, 'error')
             else:
                 result[ind] = ''.join(data[1])
-                col = ind + 29
+                col = ind + playercolumn
                 if data[2][0] == 'Bold':
                     st.range(row, col).api.Font.Bold = True
                 if data[2][1] == 'red':
@@ -1931,15 +1933,15 @@ class Sele(object):
                         st.range(row, col).api.Comment.Text('\n'.join(data[3]))
                     st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
                     st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
-        st.range((row, 29), (row, 80)).value = result
+        st.range((row, playercolumn), (row, 100)).value = result
         og = hal[3]
         if og > 0:
-            st.range(row, plist.index('OG') + 29).value = og
+            st.range(row, plist.index('OG') + playercolumn).value = og
         print('%s Finished' % ha)
 
-    def to_sheet_pfl(self, st, row, hal, ha):
-        plist = st.range((8, 29), (8, 80)).value
-        nlist = st.range((6, 29), (6, 80)).value
+    def to_sheet_pfl(self, st, row, hal, ha, playercolumn=29, shotcolumn=19):
+        plist = st.range((8, playercolumn), (8, 100)).value
+        nlist = st.range((6, playercolumn), (6, 100)).value
         pldic = {'ú': 'u', 'é': 'e', 'É': 'E'}
 
         def pl_2(l):
@@ -1952,9 +1954,9 @@ class Sele(object):
             return l2
 
         pl2 = pl_2(plist)
-        result = st.range((row, 29), (row, 80)).value
-        st.range((row, 29), (row, 80)).api.Font.Bold = False
-        st.range((row, 29), (row, 80)).api.Font.ColorIndex = 1
+        result = st.range((row, playercolumn), (row, 100)).value
+        st.range((row, playercolumn), (row, 100)).api.Font.Bold = False
+        st.range((row, playercolumn), (row, 100)).api.Font.ColorIndex = 1
         home = hal[0][0]
         away = hal[0][1]
         st.range(row, 5).value = home[0]
@@ -1978,7 +1980,7 @@ class Sele(object):
         if 'red' in away[2]:
             st.range(row, 6).api.Interior.Color = 255
 
-        st.range((row, 19), (row, 25)).value = hal[1]
+        st.range((row, shotcolumn), (row, shotcolumn + 6)).value = hal[1]
 
         for name in hal[2][0]:
             ind = 0
@@ -1994,7 +1996,7 @@ class Sele(object):
                 print(ha, '-', name, 'error')
             else:
                 result[ind] = ''.join(data[1])
-                col = ind + 29
+                col = ind + playercolumn
                 if data[2][0] == 'Bold':
                     st.range(row, col).api.Font.Bold = True
                 if data[2][1] == 'red':
@@ -2014,10 +2016,10 @@ class Sele(object):
                         st.range(row, col).api.Comment.Text('\n'.join(data[3]))
                     st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Bold = True
                     st.range(row, col).api.Comment.Shape.TextFrame.Characters().Font.Name = 'Tahoma'
-        st.range((row, 29), (row, 80)).value = result
+        st.range((row, playercolumn), (row, 100)).value = result
         og = hal[3]
         if og > 0:
-            st.range(row, plist.index('OG') + 29).value = og
+            st.range(row, plist.index('OG') + playercolumn).value = og
         print('%s Finished' % ha)
 
 

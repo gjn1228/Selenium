@@ -1,0 +1,170 @@
+FB	Mon	001	2018-11-27 03:00:00	0	0	Low limit + and Lo.
+FB	Mon	002	2018-11-27 03:30:00	0	0	Not solid, respect MKT move.
+FB	Mon	003	2018-11-27 03:30:00	0	0	Solid price
+FB	Mon	004	2018-11-27 03:45:00	0	0	Not solid, finalize Metz shorter than consensus for expect investment
+FB	Mon	005	2018-11-27 04:00:00	0	0	Both have some injury and doubt, net no adj now. Can Small Lay Burnley
+FB	Mon	007	2018-11-27 06:00:00	1.60	2.70	Played on Mon, Bota tiny motivation here so nearly dead here, solid price, 1.60/2.70, OK to open Parana+1 close to MKT, looks no dif for Sunday results.
+FB	Mon	008	2018-11-27 06:00:00	0	0	Not solid, Souza dbt, Sport a little more motivation, draw may not good for Sport, played on Mon, please check results after Sunday matches finished, Sport chance to be dead Mon morning.
+FB	Mon	009	2018-11-27 06:00:00	0	0	Tigre -0.05 cple out again
+FB	Mon	010	2018-11-27 08:15:00	0	0	. SMALL LAY Inde -0.25 HDC @ 1.98. Inde -0.05 cple out inc. Meza
+FB	Sat	001	2018-11-24 13:00:00	0	0	must win for Kashiwa for a chance to stay up. Cerezo can challenge for 4th place but looks a difficult task. Kashiwa +0.225 net
+FB	Sat	002	2018-11-24 13:00:00	0	0	Derby but FCT chasing ACL spot. Kobayashi out for KF, check lineup for rotation. No matchday CC. FCT +0.30 net
+FB	Sat	003	2018-11-24 13:00:00	0	0	Dead Game. VVN relegated
+FB	Sat	004	2018-11-24 13:00:00	0	0	Jubilo should be relatively safe. CS a touch more motivated for ACL spot here in our price. Check Jubilo dbt. Net CS +0.125
+FB	Sat	005	2018-11-24 13:00:00	0	0	YFM looks pretty safe with superior GD. Sagan need points here. No matchday CC. Sagan net +0.25
+FB	Sat	006	2018-11-24 13:00:00	0	0	Hiroshima w/o Petric, only need one point in the last two game to secure ACL seat. Nagoya battle to stay up. Care matchday move for Nagoya. Net Nagoya +0.25
+FB	Sat	007	2018-11-24 13:00:00	0	0	Tricky, SSP can challenge for ACL spot but again in a very passive position. Kobe should be relatively safe.
+FB	Sat	008	2018-11-24 13:00:00	0	0	Medium Lay Urawa  - Proper game here. Urawa -0.075 on teamnews
+FB	Sat	009	2018-11-24 13:00:00	0	0	Kashima more motivated chasing ACL spot, Sendai nothing to play for. Net Kashima +0.15
+FB	Sat	010	2018-11-24 13:00:00	0	0	Gangwon dead, MTV -0.3.
+FB	Sat	011	2018-11-24 13:00:00	0	0	Proper game, Seoul only need draw, Incheon need win, net+0.075 to Incheon for MTV. Open Seoul HAD bigger, Small Lay Incheon +1 at 1.60 (we want to be Seoul HAD at 2.00 with Incheon [+1] at 1.64).
+FB	Sat	012	2018-11-24 14:35:00	0	0	Fine to have Adelaide close to line
+FB	Sat	013	2018-11-24 15:00:00	0	0	Please Enter Manually (OA Too Long)
+FB	Sat	014	2018-11-24 16:50:00	0	0	-
+FB	Sat	015	2018-11-24 19:00:00	0	0	-
+FB	Sat	016	2018-11-24 20:00:00	0	0	Solid price, open Koln 2c shorter for expected inv.
+FB	Sat	017	2018-11-24 20:00:00	0	0	Solid price, OK to open Bochum close to MKT.
+FB	Sat	018	2018-11-24 20:00:00	0	0	OK to open Sand+1 close to MKT.
+FB	Sat	019	2018-11-24 20:00:00	0	0	Solid price, AVG 0.1 against RM mainly for int'l and UCL, SMALL LAY Eib+1 @2.60;
+FB	Sat	020	2018-11-24 20:30:00	0	0	Derby HA used, fairly solid.
+FB	Sat	021	2018-11-24 20:30:00	0	0	-
+FB	Sat	022	2018-11-24 21:30:00	0	0	-
+FB	Sat	023	2018-11-24 21:45:00	0	0	Not very solid, 0.05 adj against Lens for inj/susp and fine to open Hi close to mkt.
+FB	Sat	024	2018-11-24 22:00:00	0	0	Around 0.1 against Roma for INT and UCL next midweek
+FB	Sat	025	2018-11-24 22:30:00	0	0	Finnbogason heavy dbt for Augsburg along with Koo. OK for 50k CC on Augsburg .
+FB	Sat	026	2018-11-24 22:30:00	0	0	3.00 / 4.20 - We priced as Lewandowski small doubt only. Easiest fixture for Bayern to regroup. Respect matchday move please.
+FB	Sat	027	2018-11-24 22:30:00	0	0	Some LT inj return for Wolfsburg. Forsberg still out for RB
+FB	Sat	028	2018-11-24 22:30:00	0	0	Reus resumed training but Akanji and Diallo remains doubtful. Finalised Dortmund shorter for $$$
+FB	Sat	029	2018-11-24 22:30:00	0	0	HB w/o both CB but Hoffenheim could rotate ahead of UCL. Please check Hoffenheim lineup.
+FB	Sat	030	2018-11-24 23:00:00	0	0	Maguire and Maddision are still doubt for Leicester, Brighton might get couple back from injury, please check
+FB	Sat	031	2018-11-24 23:00:00	0	0	Sigurdsson is still big doubt for Everton, Gomes should be ok. Consensus has around 0.05 against Everton now
+FB	Sat	032	2018-11-24 23:00:00	0	0	Bertrand susp, Injs and Lemina are big doubt for Saints. Ranieri 1st game, please respect match day move and no CC on Fulham and Lo pls
+FB	Sat	033	2018-11-24 23:00:00	0	0	Please Enter Manually (OA Too Long)
+FB	Sat	034	2018-11-24 23:00:00	0	0	playing PSG on WED so please keep an eye on any rotation from Lpool
+FB	Sat	035	2018-11-24 23:00:00	1.825	3.45	(1.825/3.45) Mendy is out, Bernando Silva doubt, small against City in price
+FB	Sat	036	2018-11-24 23:00:00	0	0	-
+FB	Sat	037	2018-11-24 23:00:00	0	0	Solid price.
+FB	Sat	038	2018-11-24 23:00:00	0	0	Strong consensus.
+FB	Sat	039	2018-11-24 23:00:00	0	0	Derby HA used, fairly solid.
+FB	Sat	040	2018-11-24 23:00:00	0	0	Solid price, AVG 0.1 against Derby for outs/dbts
+FB	Sat	041	2018-11-24 23:00:00	0	0	Not solid, respect MKT move pls.
+FB	Sat	042	2018-11-24 23:00:00	0	0	Most of us priced Swans impt MF Celina fit, check his status pls.
+FB	Sat	043	2018-11-24 23:00:00	0	0	Not solid, respect MKT move to Hi.
+FB	Sat	044	2018-11-24 23:00:00	0	0	Southend had midweek & some injs, different view in the file, respect matchday market move pls.
+FB	Sat	045	2018-11-24 23:00:00	0	0	Only tiny adj against Donny for midweek as they had an rather easy game.
+FB	Sat	046	2018-11-24 23:00:00	0	0	-
+FB	Sat	047	2018-11-24 23:00:00	0	0	Both had midweek with Bradford played ET, a touch against them in the price overall
+FB	Sat	048	2018-11-24 23:00:00	0	0	BR played in midweek but Charlton missing Taylor here, no net adj
+FB	Sat	049	2018-11-24 23:00:00	0	0	Gills had AET in EFA midweek while Luton have their own susp, net abt 0.05 against Gills
+FB	Sat	050	2018-11-24 23:00:00	0	0	Added Small Lay
+FB	Sat	051	2018-11-24 23:00:00	0	0	-
+FB	Sat	052	2018-11-24 23:00:00	0	0	-
+FB	Sat	053	2018-11-24 23:00:00	0	0	-
+FB	Sat	054	2018-11-24 23:00:00	0	0	Shrewsbury had midweek EFA & cpl dbts after that, care move towards Wycombe until we know more
+FB	Sat	055	2018-11-24 23:00:00	0	0	-
+FB	Sat	056	2018-11-24 23:00:00	0	0	small adj against Hibs for Gray and Hanlon doubts. Ok to Small Lay Hi TTG
+FB	Sat	057	2018-11-24 23:00:00	0	0	adj around.05 against Motherwell for susp and doubts for now
+FB	Sat	058	2018-11-24 23:00:00	0	0	ok to Small Lay St Mirren HHAD plus @2.32
+FB	Sat	059	2018-11-24 23:00:00	0	0	Killie still with couple of doubts, adj around.05 for now
+FB	Sat	060	2018-11-24 23:00:00	0	0	proper game; Antofagasta some adj against them for team news; Antofagasta needs to win
+FB	Sat	061	2018-11-24 23:00:00	0	0	proper game; Colo Colo main striker Paredes now available to play, which is not in our price so opened shorter Colo Colo to start
+FB	Sat	062	2018-11-24 23:15:00	0	0	Solid price, AVG 0.05 against Valencia mainly for UCL;
+FB	Sat	063	2018-11-25 00:00:00	0	0	Sup 2.4; Think Neymar and Mbappe wont be risked here, PSG -0.6
+FB	Sat	064	2018-11-25 00:00:00	0	0	-
+FB	Sat	065	2018-11-25 01:00:00	2.32	3.32	Solid price; Around 0.15 against Juv due to INT and UCL next midweek; 2.32/3.32
+FB	Sat	066	2018-11-25 01:00:00	0	0	Solid 0.5 motivation adj for Start, Haugesund has nothing to play for. Open with Start close to line
+FB	Sat	067	2018-11-25 01:00:00	0	0	Solid 0.4 motivation adj for Lillestrom, Kristiansund has nothing to play for.
+FB	Sat	068	2018-11-25 01:00:00	0	0	Dif opinions on Rosenborg. They have UEL next midweek but almost dead already. Around 0.5 against Rosenborg for less motivation and possible rotation. Not solid price, trade carefully.
+FB	Sat	069	2018-11-25 01:00:00	0	0	Around 0.2 motivation for Molde on average.
+FB	Sat	070	2018-11-25 01:00:00	0	0	Around 0.15 motivation for Brann on average
+FB	Sat	071	2018-11-25 01:00:00	0	0	Stabaek must win, Stromsgodset could accept at least 1 point to aviod relegate directly while 3 points would be much better. Net 0.15 on average for Stabaek in price.
+FB	Sat	072	2018-11-25 01:00:00	0	0	Not solid price; Dead game, 0.2 against Sarpsborg for UEL next midweek and possible rotation
+FB	Sat	073	2018-11-25 01:00:00	0	0	Dead game; Open with Ranheim on the line
+FB	Sat	074	2018-11-25 01:00:00	0	0	Small against Standard for susp/doubt
+FB	Sat	075	2018-11-25 01:30:00	0	0	Spurs have many injury and doubt at the back and couple of Argie players are returning late too on THU. 0.05-0.075 against Spurs for now. HDC 106%, please change to 104% after both clubs press conference
+FB	Sat	076	2018-11-25 01:30:00	0	0	Fairly solid, AVG 0.07 against Brentford for outs/dbts, low limit on HH+ and Low.
+FB	Sat	077	2018-11-25 01:30:00	0	0	S04 looks short upfront with Uth and Embolo out and Burgstaller small dbt.
+FB	Sat	078	2018-11-25 01:30:00	0	0	AVG 0.1 against Lev for impt outs, care MKT move to Huesca;
+FB	Sat	079	2018-11-25 01:30:00	0	0	both have some dbts, Zwolle a touch more affected
+FB	Sat	080	2018-11-25 01:30:00	2.65	3.95	2.65/3.95; Ajax -0.1 with UCL game coming up and imp mf Ziyech out; low limt +
+FB	Sat	081	2018-11-25 03:00:00	0	0	-
+FB	Sat	082	2018-11-25 03:00:00	0	0	small neg Nantes
+FB	Sat	083	2018-11-25 03:00:00	0	0	Both hv susp/doubts but Nimes looks worse, small neg Nimes
+FB	Sat	084	2018-11-25 03:00:00	0	0	Caen cpl susp while Monaco cpl doubts; small neg Caen now, check on Monaco doubts and adj either way
+FB	Sat	085	2018-11-25 03:00:00	0	0	small neg Guingamp
+FB	Sat	086	2018-11-25 03:00:00	0	0	Both teams have a few doubtsa€| Mouscron slightly worse, net -0.05b for nowa€|Diff fav compare to market, wont mind to take bits and pieces before change
+FB	Sat	087	2018-11-25 03:00:00	0	0	Both teams have men out/doubt, net no adj for nowa€| Opened Oostende slightly bigger than consensus, we still have Kortrijk quite a bit bigger compare to market, happy to take some CC before change.
+FB	Sat	088	2018-11-25 03:30:00	1.87	3.16	Open with Frosinone close to line; Around 0.2 against Inter for both team news and UCL next midweek; 1.87/3.16
+FB	Sat	089	2018-11-25 03:30:00	0	0	2.10b SUP
+FB	Sat	090	2018-11-25 03:45:00	0	0	Not solid, AVG 0.05 against AM for outs, can lay 500K on FOS H+X if coming;
+FB	Sat	091	2018-11-25 03:45:00	2.22	3.7	2.22/3.7
+FB	Sat	092	2018-11-25 03:45:00	0	0	-
+FB	Sat	093	2018-11-25 04:00:00	0	0	(2-2) No away goal, ET & PK. A couple out on both sides, no adj. Please be reminded to change CHP after big changes.
+FB	Sat	094	2018-11-25 04:45:00	0	0	Porto likely to rotate ~0.3.
+FB	Sat	095	2018-11-25 06:00:00	0	0	Adj 0.25 against Santos for less motivation, not solid, care MKT move to AM.
+FB	Sat	096	2018-11-25 07:00:00	0	0	Temuco need to win to stay alive; La Calera in theory motivated, but has been really struggling; net ard Temuco +0.175 for mot but we are still bigger than mkt, can Small Lay Temuco  in early market; but respect matchday mkt
+FB	Sat	097	2018-11-25 07:00:00	0	0	Queretaro +-0.2 mot for now, though can be 0.2 either way depending on whether Monarcas win or not on Friday. Needs to be reassessed after Monarcas match.
+FB	Sat	098	2018-11-25 09:00:00	0	0	Small Lay HI . Small Lay America -1.25 HDC @ 2.0. played in Toluca, small h/a for America. America might rest a little ahead of midweek and -0.15 for that, Vera should be motivated with a relegation fight coming in Clausura but don't seem immediately bothered.
+FB	Sat	099	2018-11-25 09:00:00	0	0	Small Lay Pachuca -0.75 HDC @ 1.85. lay done. Pachuca +0.35 mot, Leon are dead. This is not affected by earlier results, Pachuca must win no matter what.
+FB	Sat	100	2018-11-25 11:00:00	0	0	HDC to low 104% once Monarcas has played so the picture is a bit clearer. Chivas dead, Tigres all but confirmed in the playoffs already so no mot adj for now, should know that for sure by KO. Only if both Monarcas win and Pachuca win by 3+ goals would we start giving Tigres some mot adj.
+FB	Sat	101	2018-11-25 11:06:00	0	0	Small Lay HI . Small Lay Monterrey -1 HHAD @ 2.62. basically dead. Atlas are dead, Monterrey might be playing for a higher seeding but they might rest ahead of midweek. No adjs for now.
+FB	Sun	001	2018-11-25 12:00:00	0	0	Derby, Omiya only need draw so finalized draw cents shorter, low limit on HAD Draw, HHAD A[+1] and TTG LO pls.
+FB	Sun	002	2018-11-25 13:00:00	0	0	Almost dead game, Ulsan have MTV to 2nd place, Jeju only tiny chance to 4th place, so net+0.1 to Ulsan.
+FB	Sun	003	2018-11-25 13:00:00	0	0	Proper game, different favs and PK to start, Gyeongnam have MTV to keep 2nd place, Suwon have MTV to be 4th place with possibility to ACL if Ulsan won in KFA final.
+FB	Sun	004	2018-11-25 14:00:00	0	0	Open with MV close to line
+FB	Sun	005	2018-11-25 15:00:00	0	0	+0.2 to Pohang for MTV to keep 4th place, Pohang close to line to start. Pohang play after Suwon whose match result affects Pohang's MTV, pls push Pohang by 0.075 if Suwon trailing by big margin, cut Pohang by 0.075 if Suwon leading by big margin.
+FB	Sun	006	2018-11-25 16:00:00	0	0	-
+FB	Sun	007	2018-11-25 19:00:00	0	0	AVG 0.05 against Bilbao for outs, care MKT move to Get;
+FB	Sun	008	2018-11-25 19:00:00	0	0	New manager for Spartak & might be back to positive way finally?
+FB	Sun	009	2018-11-25 19:15:00	0	0	-
+FB	Sun	010	2018-11-25 19:30:00	0	0	Solid price;
+FB	Sun	013	2018-11-25 20:00:00	0	0	Derby HA used, fairly solid, SMALL LAY Aston Villa @1.80;
+FB	Sun	014	2018-11-25 20:30:00	0	0	Not solid.
+FB	Sun	015	2018-11-25 20:30:00	0	0	Solid price, Glatzel inj again.
+FB	Sun	016	2018-11-25 20:30:00	0	0	Not solid, care MKT move against Dresden.
+FB	Sun	017	2018-11-25 21:30:00	0	0	0.05-0.075 against Arsenal now, Lacazette and Aubameyang only just return to light training in the gym
+FB	Sun	018	2018-11-25 21:30:00	0	0	1.83 sup
+FB	Sun	019	2018-11-25 21:30:00	0	0	RVP dbt -0.05
+FB	Sun	020	2018-11-25 21:30:00	0	0	-
+FB	Sun	021	2018-11-25 21:30:00	0	0	-
+FB	Sun	022	2018-11-25 21:30:00	0	0	tiny against Genta€|
+FB	Sun	023	2018-11-25 21:45:00	0	0	1st leg 1:0; No Asian mkt, not solid on HDC and Hilo in file, full respect mkt move please; Small change against Bromm for cushion in price
+FB	Sun	024	2018-11-25 22:00:00	0	0	Solid price
+FB	Sun	025	2018-11-25 22:00:00	0	0	-
+FB	Sun	026	2018-11-25 22:00:00	2.50	3.56	Around 0.1; Around 0.1 against Napoli due to UCL next midweek; 2.50/3.56
+FB	Sun	027	2018-11-25 22:00:00	0	0	Both hv doubts, net no adj for now; check teamnews and adj either way
+FB	Sun	028	2018-11-25 22:30:00	0	0	Bargfrede now out for Bremen but impt Petersen is dbt for Freiburg. Check Petersen status.
+FB	Sun	029	2018-11-25 23:15:00	0	0	Fairly solid
+FB	Sun	030	2018-11-25 23:45:00	0	0	-
+FB	Sun	031	2018-11-26 00:00:00	0	0	both likely have 2 defenders out here, net no adj for now. Can Small Lay Wolves -1 @1.91
+FB	Sun	032	2018-11-26 00:00:00	0	0	Nice doubts maybe back while Lille 2 susp; Lille -0.05 net
+FB	Sun	033	2018-11-26 00:00:00	0	0	-
+FB	Sun	034	2018-11-26 00:00:00	0	0	-
+FB	Sun	035	2018-11-26 01:00:00	0	0	Fullkrug remains major dbt for Hannover and key Bedou is out here. OK to small lay Hannover  if it comes.
+FB	Sun	036	2018-11-26 01:00:00	0	0	0.27 against Milan for injuries & susp, care further move against Milan
+FB	Sun	037	2018-11-26 01:00:00	0	0	-
+FB	Sun	038	2018-11-26 01:00:00	0	0	anderlecht without a couple, -0.075 in our opening
+FB	Sun	039	2018-11-26 01:30:00	0	0	Solid price, AVG 0.06 against Girona for outs, key strikers Portu & Stuani both are fit;
+FB	Sun	040	2018-11-26 02:00:00	0	0	a few dbts for Pumas, cple out for SL. Both confirmed in playoffs already so some rotation is possible either side.
+FB	Sun	041	2018-11-26 03:00:00	0	0	No net adj on balance of team news
+FB	Sun	042	2018-11-26 03:00:00	0	0	LBC ahead for APR, not sure how they rotate, coach said they will try here, adj 0.25 against APR for half rotate here, check news and respect MKT move, check Sat result on Sun, APR may rotate more(0.10 adj) if AME beat Santos.
+FB	Sun	043	2018-11-26 03:00:00	0	0	Quite dif view in price, Cruz rotate midweek, priced Cruz no rotate here, OK to open dif favor with MKT, respect MKT move.
+FB	Sun	044	2018-11-26 03:00:00	0	0	Proper game.
+FB	Sun	045	2018-11-26 03:00:00	0	0	Solid price, OK to open Gremio close to MKT.
+FB	Sun	046	2018-11-26 03:30:00	0	0	Derby
+FB	Sun	047	2018-11-26 03:45:00	0	0	Fairly solid, fine to open Hi on the line.
+FB	Sun	048	2018-11-26 04:00:00	0	0	Amiens looks worse with men out; Amiens -0.05 net; Small Lay Amiens
+FB	Sun	049	2018-11-26 04:10:00	0	0	cple inj dbts both, no net adj
+FB	Sun	050	2018-11-26 04:10:00	0	0	-
+FB	Sun	051	2018-11-26 04:30:00	0	0	Iquique safe, Uni. Chile playing for title +0.35 mot but we are still bigger than mkt, can Small Lay Uni Chile HHAD -1 @ 2.42 in early mkt, but respect matchday mkt
+FB	Sun	052	2018-11-26 04:30:00	0	0	proper game; Catolica +0.075 fighting for title while O'Higgins playing for SAC place only; Small Lay O'Higgins
+FB	Sun	053	2018-11-26 04:30:00	0	0	San Luis around 70% chance (need Everton to lose) gone by the time the games KO. Concepcion fully motivated. Currently around 0.175 adj against San Luis. Low limit the main mkts as the result in earlier game will affect the price. Updates will be sent after the related games are played
+FB	Sun	054	2018-11-26 05:00:00	0	0	Adj 0.40 to AM for more MTV in Cons, adj 0.10 more in opening as MKT HAD=1.80 (our price from 1.87 to 1.77), care MKT move to them.
+FB	Sun	055	2018-11-26 05:00:00	0	0	Chap+0.10 for more MTV.
+FB	Sun	056	2018-11-26 05:00:00	0	0	Flum no rotate for LBC in price.
+FB	Sun	057	2018-11-26 06:00:00	0	0	Small Lay NYRB
+FB	Sun	058	2018-11-26 06:00:00	0	0	no adj for now. Lobos should be motivated by clausura relegation issue, Toluca are likely in the playoffs before this is played. Either way a draw is enough for them but they may aim for a higher seeding too.
+FB	Sun	059	2018-11-26 06:20:00	0	0	-
+FB	Sun	060	2018-11-26 06:20:00	0	0	-
+FB	Sun	061	2018-11-26 08:30:00	0	0	Racing -0.05 cple out again
+FB	Sun	062	2018-11-26 08:30:00	0	0	Small Lay Portland

@@ -74,6 +74,7 @@ class Socc(object):
 
         return AllGame
 
+    # 181129 一次助攻写法从‘A’变成了‘A1’,并且助攻不写入comment
     def list_to_elist(self, Game):
         x = Game
         elist = []
@@ -263,16 +264,19 @@ class Socc(object):
                     else:
                         player_f.append('')
                     # 进球、助攻
+                    # 181129 一次助攻写法从‘A’变成了‘A1’,并且助攻不写入comment
                     if x[h][i + 2][2][j][6] > 0:
                         player_f.append('B')
                         player_x.append(str(x[h][i + 2][2][j][6]))
                         if x[h][i + 2][2][j][8] > 0:
-                            player_c.append(str(x[h][i + 2][2][j][8]) + 'A')
+                            player_x.append('A' + str(x[h][i + 2][2][j][8]))
+                            # player_c.append(str(x[h][i + 2][2][j][8]) + 'A')
                     elif x[h][i + 2][2][j][8] > 0:
-                        if x[h][i + 2][2][j][8] > 1:
-                            player_x.append(str(x[h][i + 2][2][j][8]) + 'A')
-                        else:
-                            player_x.append('A')
+                        player_x.append('A' + str(x[h][i + 2][2][j][8]))
+                        # if x[h][i + 2][2][j][8] > 1:
+                        #     player_x.append(str(x[h][i + 2][2][j][8]) + 'A')
+                        # else:
+                        #     player_x.append('A')
                         player_f.append('')
                     else:
                         player_f.append('')
@@ -323,16 +327,19 @@ class Socc(object):
                     else:
                         player_f.append('')
                     # 进球、助攻
+                    # 181129 一次助攻写法从‘A’变成了‘A1’,并且助攻不写入comment
                     if x[h][i + 2][3][j][5] > 0:
                         player_f.append('B')
                         player_x.append(str(x[h][i + 2][3][j][5]))
                         if x[h][i + 2][3][j][7] > 0:
-                            player_c.append(str(x[h][i + 2][3][j][7]) + 'A')
+                            player_x.append('A' + str(x[h][i + 2][3][j][7]))
+                            # player_c.append(str(x[h][i + 2][3][j][7]) + 'A')
                     elif x[h][i + 2][3][j][7] > 0:
-                        if x[h][i + 2][3][j][7] > 1:
-                            player_x.append(str(x[h][i + 2][3][j][7]) + 'A')
-                        else:
-                            player_x.append('A')
+                        player_x.append('A' + str(x[h][i + 2][3][j][7]))
+                        # if x[h][i + 2][3][j][7] > 1:
+                        #     player_x.append(str(x[h][i + 2][3][j][7]) + 'A')
+                        # else:
+                        #     player_x.append('A')
                         player_f.append('')
                     else:
                         player_f.append('')

@@ -1,0 +1,221 @@
+0,1,2,3,4
+1001,DF2,Jong AZ Alkmaar,Twente,Low limit + and Lo.
+1002,GD2,Hamburg,Union Berlin,"Not solid, respect MKT move."
+1003,ISA,Cagliari,AC Torino,Solid price
+1004,FF2,Metz,GFCO Ajaccio,"Not solid, finalize Metz shorter than consensus for expect investment"
+1005,EPL,Burnley,Newcastle,"Both have some injury and doubt, net no adj now. Can Small Lay Burnley"
+1006,SFL,Real Sociedad,Celta Vigo,
+1007,BD1,Botafogo,Parana,"Played on Mon, Bota tiny motivation here so nearly dead here, solid price, 1.60/2.70, OK to open Parana+1 close to MKT, looks no dif for Sunday results."
+1008,BD1,Sao Paulo,Sport Recife,"Not solid, Souza dbt, Sport a little more motivation, draw may not good for Sport, played on Mon, please check results after Sunday matches finished, Sport chance to be dead Mon morning."
+1009,APL,Defensa y Justicia,Tigre,Tigre -0.05 cple out again
+1010,APL,Lanus,Independiente,. SMALL LAY Inde -0.25 HDC @ 1.98. Inde -0.05 cple out inc. Meza
+2001,UCL,AEK Athens,Ajax,
+2002,UCL,CSKA Moscow,Viktoria Plzen,
+2003,FFC,Olympique Nimes,St. Etienne,
+2004,ED1,Brentford,Sheff Utd,
+2005,ED1,Hull City,Norwich,
+2006,ED1,Leeds,Reading,
+2007,ED1,Rotherham,QPR,
+2008,ED1,Sheff Wednesday,Bolton,
+2009,ED1,Preston,Middlesbrough,
+2010,ED2,Accrington Stanley,Wycombe,
+2011,ED2,Bristol Rovers,Gillingham,
+2012,ED2,Burton Albion,Charlton,
+2013,ED2,Doncaster,Blackpool,
+2014,ED2,Fleetwood,Coventry,
+2015,ED2,Luton,Bradford,
+2016,ED2,Oxford Utd,Rochdale,
+2017,ED2,Peterborough,AFC Wimbledon,
+2018,ED2,Portsmouth,Walsall,
+2019,ED2,Shrewsbury,Plymouth,
+2020,ED2,Southend,Scunthorpe,
+2021,ED2,Sunderland,Barnsley,
+2022,ELC,Leicester,Southampton,
+2023,UCL,Bayern Munich,Benfica,
+2024,UCL,Lyon,Manchester City,
+2025,UCL,Roma,Real Madrid,
+2026,UCL,Juventus,Valencia,
+2027,UCL,Hoffenheim,Shakhtar Donetsk,
+2028,UCL,Manchester Utd,Young Boys Bern,
+2029,APL,Rosario Central,San Martin SJ,
+3001,UCL,Atletico Madrid,Monaco,
+3002,UCL,Lokomotiv Moscow,Galatasaray,
+3003,ED1,Millwall,Birmingham,
+3004,ED1,Aston Villa,Nottingham Forest,
+3005,ED1,Ipswich,Bristol City,
+3006,ED1,Swansea,West Bromwich,
+3007,ED1,Wigan,Blackburn,
+3008,SFC,Bilbao,Huesca,
+3009,UCL,Dortmund,Bruges,
+3010,UCL,PSV Eindhoven,Barcelona,
+3011,UCL,Tottenham,Inter Milan,
+3012,UCL,Paris Saint Germain,Liverpool,
+3013,UCL,Napoli,Crvena Zvezda,
+3014,UCL,Porto,Schalke 04,
+3015,ED1,Stoke,Derby,
+3016,SAC,Fluminense,Atletico Paranaense,
+3017,AGC,River Plate,Gimnasia LP,
+3018,RFC,FC Orenburg,Arsenal Tula,
+6001,JD1,Cerezo Osaka,Kashiwa Reysol,must win for Kashiwa for a chance to stay up. Cerezo can challenge for 4th place but looks a difficult task. Kashiwa +0.225 net
+6002,JD1,FC Tokyo,Kawasaki Frontale,"Derby but FCT chasing ACL spot. Kobayashi out for KF, check lineup for rotation. No matchday CC. FCT +0.30 net"
+6003,JD1,Gamba Osaka,V-Varen Nagasaki,Dead Game. VVN relegated
+6004,JD1,Jubilo Iwata,Hokkaido Consadole Sapporo,Jubilo should be relatively safe. CS a touch more motivated for ACL spot here in our price. Check Jubilo dbt. Net CS +0.125
+6005,JD1,Sagan Tosu,Yokohama F.Marinos,YFM looks pretty safe with superior GD. Sagan need points here. No matchday CC. Sagan net +0.25
+6006,JD1,Sanfrecce Hiroshima,Nagoya Grampus,"Hiroshima w/o Petric, only need one point in the last two game to secure ACL seat. Nagoya battle to stay up. Care matchday move for Nagoya. Net Nagoya +0.25"
+6007,JD1,Shimizu S-Pulse,Vissel Kobe,"Tricky, SSP can challenge for ACL spot but again in a very passive position. Kobe should be relatively safe."
+6008,JD1,Shonan Bellmare,Urawa Reds,Medium Lay Urawa  - Proper game here. Urawa -0.075 on teamnews
+6009,JD1,Vegalta Sendai,Kashima Antlers,"Kashima more motivated chasing ACL spot, Sendai nothing to play for. Net Kashima +0.15"
+6010,KD1,Sangju Sangmu,Gangwon FC,"Gangwon dead, MTV -0.3."
+6011,KD1,FC Seoul,Incheon Utd,"Proper game, Seoul only need draw, Incheon need win, net+0.075 to Incheon for MTV. Open Seoul HAD bigger, Small Lay Incheon +1 at 1.60 (we want to be Seoul HAD at 2.00 with Incheon [+1] at 1.64)."
+6012,AD1,Wellington Phoenix,Adelaide Utd,Fine to have Adelaide close to line
+6013,KD1,Jeonnam Dragons,Daegu FC,Please Enter Manually (OA Too Long)
+6014,AD1,Brisbane Roar,Melbourne City,-
+6015,RPL,Dinamo Moscow,Yenisey,-
+6016,GD2,Darmstadt,Cologne,"Solid price, open Koln 2c shorter for expected inv."
+6017,GD2,Bochum,Aue,"Solid price, OK to open Bochum close to MKT."
+6018,GD2,Holstein Kiel,Sandhausen,OK to open Sand+1 close to MKT.
+6019,SFL,Eibar,Real Madrid,"Solid price, AVG 0.1 against RM mainly for int'l and UCL, SMALL LAY Eib+1 @2.60;"
+6020,ED1,Rotherham,Sheff Utd,"Derby HA used, fairly solid."
+6021,SPL,Hamilton Academical,Celtic,-
+6022,RPL,FC Orenburg,Ufa,-
+6023,FF2,Lens,Grenoble Foot,"Not very solid, 0.05 adj against Lens for inj/susp and fine to open Hi close to mkt."
+6024,ISA,Udinese,Roma,Around 0.1 against Roma for INT and UCL next midweek
+6025,GSL,Augsburg,Frankfurt,Finnbogason heavy dbt for Augsburg along with Koo. OK for 50k CC on Augsburg .
+6026,GSL,Bayern Munich,Dusseldorf,3.00 / 4.20 - We priced as Lewandowski small doubt only. Easiest fixture for Bayern to regroup. Respect matchday move please.
+6027,GSL,Wolfsburg,RB Leipzig,Some LT inj return for Wolfsburg. Forsberg still out for RB
+6028,GSL,Mainz,Dortmund,Reus resumed training but Akanji and Diallo remains doubtful. Finalised Dortmund shorter for $$$
+6029,GSL,Hertha Berlin,Hoffenheim,HB w/o both CB but Hoffenheim could rotate ahead of UCL. Please check Hoffenheim lineup.
+6030,EPL,Brighton,Leicester,"Maguire and Maddision are still doubt for Leicester, Brighton might get couple back from injury, please check"
+6031,EPL,Everton,Cardiff,"Sigurdsson is still big doubt for Everton, Gomes should be ok. Consensus has around 0.05 against Everton now"
+6032,EPL,Fulham,Southampton,"Bertrand susp, Injs and Lemina are big doubt for Saints. Ranieri 1st game, please respect match day move and no CC on Fulham and Lo pls"
+6033,EPL,Manchester Utd,Crystal Palace,Please Enter Manually (OA Too Long)
+6034,EPL,Watford,Liverpool,playing PSG on WED so please keep an eye on any rotation from Lpool
+6035,EPL,West Ham,Manchester City,"(1.825/3.45) Mendy is out, Bernando Silva doubt, small against City in price"
+6036,ED1,Hull City,Nottingham Forest,-
+6037,ED1,Leeds,Bristol City,Solid price.
+6038,ED1,Millwall,Bolton,Strong consensus.
+6039,ED1,Preston,Blackburn,"Derby HA used, fairly solid."
+6040,ED1,Sheff Wednesday,Derby,"Solid price, AVG 0.1 against Derby for outs/dbts"
+6041,ED1,Stoke,QPR,"Not solid, respect MKT move pls."
+6042,ED1,Swansea,Norwich,"Most of us priced Swans impt MF Celina fit, check his status pls."
+6043,ED1,Wigan,Reading,"Not solid, respect MKT move to Hi."
+6044,ED2,AFC Wimbledon,Southend,"Southend had midweek & some injs, different view in the file, respect matchday market move pls."
+6045,ED2,Barnsley,Doncaster,Only tiny adj against Donny for midweek as they had an rather easy game.
+6046,ED2,Blackpool,Burton Albion,-
+6047,ED2,Bradford,Oxford Utd,"Both had midweek with Bradford played ET, a touch against them in the price overall"
+6048,ED2,Charlton,Bristol Rovers,"BR played in midweek but Charlton missing Taylor here, no net adj"
+6049,ED2,Gillingham,Luton,"Gills had AET in EFA midweek while Luton have their own susp, net abt 0.05 against Gills"
+6050,ED2,Plymouth,Fleetwood,Added Small Lay
+6051,ED2,Rochdale,Accrington Stanley,-
+6052,ED2,Scunthorpe,Portsmouth,-
+6053,ED2,Walsall,Sunderland,-
+6054,ED2,Wycombe,Shrewsbury,"Shrewsbury had midweek EFA & cpl dbts after that, care move towards Wycombe until we know more"
+6055,SPL,Rangers,Livingston,-
+6056,SPL,Hibernian,Dundee,small adj against Hibs for Gray and Hanlon doubts. Ok to Small Lay Hi TTG
+6057,SPL,Motherwell,Aberdeen,adj around.05 against Motherwell for susp and doubts for now
+6058,SPL,St. Mirren,Hearts,ok to Small Lay St Mirren HHAD plus @2.32
+6059,SPL,St. Johnstone,Kilmarnock,"Killie still with couple of doubts, adj around.05 for now"
+6060,CD1,Antofagasta,Union Espanola,proper game; Antofagasta some adj against them for team news; Antofagasta needs to win
+6061,CD1,Huachipato,Colo Colo,"proper game; Colo Colo main striker Paredes now available to play, which is not in our price so opened shorter Colo Colo to start"
+6062,SFL,Valencia,Vallecano,"Solid price, AVG 0.05 against Valencia mainly for UCL;"
+6063,FFL,Paris Saint Germain,Toulouse,"Sup 2.4; Think Neymar and Mbappe wont be risked here, PSG -0.6"
+6064,RPL,Anzhi,Rubin Kazan,-
+6065,ISA,Juventus,SPAL,Solid price; Around 0.15 against Juv due to INT and UCL next midweek; 2.32/3.32
+6066,NTL,Haugesund,Start,"Solid 0.5 motivation adj for Start, Haugesund has nothing to play for. Open with Start close to line"
+6067,NTL,Lillestrom,Kristiansund,"Solid 0.4 motivation adj for Lillestrom, Kristiansund has nothing to play for."
+6068,NTL,Rosenborg,Bodo Glimt,"Dif opinions on Rosenborg. They have UEL next midweek but almost dead already. Around 0.5 against Rosenborg for less motivation and possible rotation. Not solid price, trade carefully."
+6069,NTL,Sandefjord,Molde,Around 0.2 motivation for Molde on average.
+6070,NTL,Brann,Odd BK,Around 0.15 motivation for Brann on average
+6071,NTL,Stabaek,Stromsgodset,"Stabaek must win, Stromsgodset could accept at least 1 point to aviod relegate directly while 3 points would be much better. Net 0.15 on average for Stabaek in price."
+6072,NTL,Tromso,Sarpsborg,"Not solid price; Dead game, 0.2 against Sarpsborg for UEL next midweek and possible rotation"
+6073,NTL,Valerenga,Ranheim,Dead game; Open with Ranheim on the line
+6074,BFL,Standard,Eupen,Small against Standard for susp/doubt
+6075,EPL,Tottenham,Chelsea,"Spurs have many injury and doubt at the back and couple of Argie players are returning late too on THU. 0.05-0.075 against Spurs for now. HDC 106%, please change to 104% after both clubs press conference"
+6076,ED1,Brentford,Middlesbrough,"Fairly solid, AVG 0.07 against Brentford for outs/dbts, low limit on HH+ and Low."
+6077,GSL,Schalke 04,Nurnberg,S04 looks short upfront with Uth and Embolo out and Burgstaller small dbt.
+6078,SFL,Huesca,Levante,"AVG 0.1 against Lev for impt outs, care MKT move to Huesca;"
+6079,DFL,Zwolle,Den Haag,"both have some dbts, Zwolle a touch more affected"
+6080,DFL,NAC,Ajax,2.65/3.95; Ajax -0.1 with UCL game coming up and imp mf Ziyech out; low limt +
+6081,FFL,Dijon,Bordeaux,-
+6082,FFL,Nantes,Angers SCO,small neg Nantes
+6083,FFL,Strasbourg,Olympique Nimes,"Both hv susp/doubts but Nimes looks worse, small neg Nimes"
+6084,FFL,Caen,Monaco,"Caen cpl susp while Monaco cpl doubts; small neg Caen now, check on Monaco doubts and adj either way"
+6085,FFL,Reims,Guingamp,small neg Guingamp
+6086,BFL,Waasland Beveren,Mouscron,"Both teams have a few doubtsa€| Mouscron slightly worse, net -0.05b for nowa€|Diff fav compare to market, wont mind to take bits and pieces before change"
+6087,BFL,Oostende,KV Kortrijk,"Both teams have men out/doubt, net no adj for nowa€| Opened Oostende slightly bigger than consensus, we still have Kortrijk quite a bit bigger compare to market, happy to take some CC before change."
+6088,ISA,Inter Milan,Frosinone,Open with Frosinone close to line; Around 0.2 against Inter for both team news and UCL next midweek; 1.87/3.16
+6089,BFL,Genk,Cercle Bruges,2.10b SUP
+6090,SFL,Atletico Madrid,Barcelona,"Not solid, AVG 0.05 against AM for outs, can lay 500K on FOS H+X if coming;"
+6091,DFL,PSV Eindhoven,Heerenveen,2.22/3.7
+6092,DFL,Fortuna Sittard,Heracles,-
+6093,LBC,River Plate,Boca Juniors,"(2-2) No away goal, ET & PK. A couple out on both sides, no adj. Please be reminded to change CHP after big changes."
+6094,PFC,Porto,Belenenses,Porto likely to rotate ~0.3.
+6095,BD1,Santos,Atletico Mineiro,"Adj 0.25 against Santos for less motivation, not solid, care MKT move to AM."
+6096,CD1,Union La Calera,Deportes Temuco,"Temuco need to win to stay alive; La Calera in theory motivated, but has been really struggling; net ard Temuco +0.175 for mot but we are still bigger than mkt, can Small Lay Temuco  in early market; but respect matchday mkt"
+6097,MXL,Queretaro,Necaxa,"Queretaro +-0.2 mot for now, though can be 0.2 either way depending on whether Monarcas win or not on Friday. Needs to be reassessed after Monarcas match."
+6098,MXL,CF America,Veracruz,"Small Lay HI . Small Lay America -1.25 HDC @ 2.0. played in Toluca, small h/a for America. America might rest a little ahead of midweek and -0.15 for that, Vera should be motivated with a relegation fight coming in Clausura but don't seem immediately bothered."
+6099,MXL,Pachuca,Club Leon,"Small Lay Pachuca -0.75 HDC @ 1.85. lay done. Pachuca +0.35 mot, Leon are dead. This is not affected by earlier results, Pachuca must win no matter what."
+6100,MXL,Guadalajara,Tigres UANL,"HDC to low 104% once Monarcas has played so the picture is a bit clearer. Chivas dead, Tigres all but confirmed in the playoffs already so no mot adj for now, should know that for sure by KO. Only if both Monarcas win and Pachuca win by 3+ goals would we start giving Tigres some mot adj."
+6101,MXL,Monterrey,Atlas,"Small Lay HI . Small Lay Monterrey -1 HHAD @ 2.62. basically dead. Atlas are dead, Monterrey might be playing for a higher seeding but they might rest ahead of midweek. No adjs for now."
+7001,JD2,Omiya Ardija,Tokyo Verdy,"Derby, Omiya only need draw so finalized draw cents shorter, low limit on HAD Draw, HHAD A[+1] and TTG LO pls."
+7002,KD1,Ulsan Hyundai,Jeju Utd,"Almost dead game, Ulsan have MTV to 2nd place, Jeju only tiny chance to 4th place, so net+0.1 to Ulsan."
+7003,KD1,Gyeongnam FC,Suwon Bluewings,"Proper game, different favs and PK to start, Gyeongnam have MTV to keep 2nd place, Suwon have MTV to be 4th place with possibility to ACL if Ulsan won in KFA final."
+7004,AD1,Sydney FC,Melbourne Victory,Open with MV close to line
+7005,KD1,Pohang Steelers,Jeonbuk Motors,"+0.2 to Pohang for MTV to keep 4th place, Pohang close to line to start. Pohang play after Suwon whose match result affects Pohang's MTV, pls push Pohang by 0.075 if Suwon trailing by big margin, cut Pohang by 0.075 if Suwon leading by big margin."
+7006,AD1,Perth Glory,Central Coast Mariners,-
+7007,SFL,Bilbao,Getafe,"AVG 0.05 against Bilbao for outs, care MKT move to Get;"
+7008,RPL,Spartak Moscow,Krylya Sovetov Samara,New manager for Spartak & might be back to positive way finally?
+7009,DFL,Emmen,Excelsior,-
+7010,ISA,Parma,Sassuolo,Solid price;
+7011,SEC,Indonesia,Philippines,
+7012,SEC,Thailand,Singapore,
+7013,ED1,Aston Villa,Birmingham,"Derby HA used, fairly solid, SMALL LAY Aston Villa @1.80;"
+7014,GD2,Jahn Regensburg,St. Pauli,Not solid.
+7015,GD2,Heidenheim,Paderborn,"Solid price, Glatzel inj again."
+7016,GD2,Dresden,Ingolstadt,"Not solid, care MKT move against Dresden."
+7017,EPL,Bournemouth,Arsenal,"0.05-0.075 against Arsenal now, Lacazette and Aubameyang only just return to light training in the gym"
+7018,DFL,Utrecht,De Graafschap,1.83 sup
+7019,DFL,Feyenoord,Groningen,RVP dbt -0.05
+7020,DFL,Willem II,Vitesse,-
+7021,RPL,FK Krasnodar,Arsenal Tula,-
+7022,BFL,AA Gent,Antwerp,tiny against Genta€|
+7023,SAL,Brommapojkarna,AFC Eskilstuna,"1st leg 1:0; No Asian mkt, not solid on HDC and Hilo in file, full respect mkt move please; Small change against Bromm for cushion in price"
+7024,ISA,Bologna,Fiorentina,Solid price
+7025,ISA,Empoli,Atalanta,-
+7026,ISA,Napoli,Chievo,Around 0.1; Around 0.1 against Napoli due to UCL next midweek; 2.50/3.56
+7027,FFL,Montpellier,Rennes,"Both hv doubts, net no adj for now; check teamnews and adj either way"
+7028,GSL,Freiburg,Werder Bremen,Bargfrede now out for Bremen but impt Petersen is dbt for Freiburg. Check Petersen status.
+7029,SFL,Sevilla,Valladolid,Fairly solid
+7030,DFL,Venlo,AZ Alkmaar,-
+7031,EPL,Wolves,Huddersfield,"both likely have 2 defenders out here, net no adj for now. Can Small Lay Wolves -1 @1.91"
+7032,FFL,Nice,Lille,Nice doubts maybe back while Lille 2 susp; Lille -0.05 net
+7033,PFC,Maritimo,Feirense,-
+7034,RPL,Zenit St. Petersburg,Rostov,-
+7035,GSL,Monchengladbach,Hannover,Fullkrug remains major dbt for Hannover and key Bedou is out here. OK to small lay Hannover  if it comes.
+7036,ISA,Lazio,AC Milan,"0.27 against Milan for injuries & susp, care further move against Milan"
+7037,PFC,Santa Clara,Chaves,-
+7038,BFL,Sint Truiden,Anderlecht,"anderlecht without a couple, -0.075 in our opening"
+7039,SFL,Espanyol,Girona,"Solid price, AVG 0.06 against Girona for outs, key strikers Portu & Stuani both are fit;"
+7040,MXL,Pumas UNAM,Santos Laguna,"a few dbts for Pumas, cple out for SL. Both confirmed in playoffs already so some rotation is possible either side."
+7041,BFL,Lokeren,Charleroi,No net adj on balance of team news
+7042,BD1,Atletico Paranaense,Ceara,"LBC ahead for APR, not sure how they rotate, coach said they will try here, adj 0.25 against APR for half rotate here, check news and respect MKT move, check Sat result on Sun, APR may rotate more(0.10 adj) if AME beat Santos."
+7043,BD1,Cruzeiro,Flamengo,"Quite dif view in price, Cruz rotate midweek, priced Cruz no rotate here, OK to open dif favor with MKT, respect MKT move."
+7044,BD1,Vasco da Gama,Palmeiras,Proper game.
+7045,BD1,Vitoria,Gremio,"Solid price, OK to open Gremio close to MKT."
+7046,ISA,Genoa,Sampdoria,Derby
+7047,SFL,Villarreal,Betis,"Fairly solid, fine to open Hi on the line."
+7048,FFL,Amiens,Marseille,Amiens looks worse with men out; Amiens -0.05 net; Small Lay Amiens
+7049,APL,San Lorenzo,Huracan,"cple inj dbts both, no net adj"
+7050,APL,Union Santa Fe,Velez Sarsfield,-
+7051,CD1,Universidad Chile,Iquique,"Iquique safe, Uni. Chile playing for title +0.35 mot but we are still bigger than mkt, can Small Lay Uni Chile HHAD -1 @ 2.42 in early mkt, but respect matchday mkt"
+7052,CD1,Universidad Catolica,O'Higgins,proper game; Catolica +0.075 fighting for title while O'Higgins playing for SAC place only; Small Lay O'Higgins
+7053,CD1,Universidad Concepcion,San Luis Quillota,San Luis around 70% chance (need Everton to lose) gone by the time the games KO. Concepcion fully motivated. Currently around 0.175 adj against San Luis. Low limit the main mkts as the result in earlier game will affect the price. Updates will be sent after the related games are played
+7054,BD1,America Mineiro,Bahia,"Adj 0.40 to AM for more MTV in Cons, adj 0.10 more in opening as MKT HAD=1.80 (our price from 1.87 to 1.77), care MKT move to them."
+7055,BD1,Corinthians,Chapecoense,Chap+0.10 for more MTV.
+7056,BD1,Internacional,Fluminense,Flum no rotate for LBC in price.
+7057,MLS,Atlanta Utd,New York Red Bulls,Small Lay NYRB
+7058,MXL,Lobos BUAP,Toluca,"no adj for now. Lobos should be motivated by clausura relegation issue, Toluca are likely in the playoffs before this is played. Either way a draw is enough for them but they may aim for a higher seeding too."
+7059,APL,Aldosivi,Newell's Old Boys,-
+7060,APL,San Martin Tucuman,Colon,-
+7061,APL,Racing Club,Banfield,Racing -0.05 cple out again
+7062,MLS,Portland Timbers,Sporting Kansas City,Small Lay Portland
